@@ -79,7 +79,7 @@
 
 首页默认菜单
 
-![输入图片说明](https://gitee.com/uploads/images/2017/1226/173015_26a24abc_1334796.png "屏幕截图.png")
+![输入图片说明](https://gitee.com/uploads/images/2018/0106/183812_8ac728a1_1334796.png "屏幕截图.png")
 
 
 
