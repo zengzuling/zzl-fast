@@ -77,13 +77,13 @@
 
  **项目截图** 
 
-首页默认菜单
+后台管理页面
 
 ![输入图片说明](https://gitee.com/uploads/images/2018/0106/183812_8ac728a1_1334796.png "屏幕截图.png")
 
 
 
-增删改查页面
+前端框架页面
 
 ![输入图片说明](https://gitee.com/uploads/images/2017/1226/173206_cf4ab878_1334796.png "屏幕截图.png")
 
