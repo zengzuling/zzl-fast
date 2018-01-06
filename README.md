@@ -1,5 +1,7 @@
 # cy-fast
 
+ssm版开发框架  cy-security  [https://gitee.com/leiyuxi/cy-security](https://gitee.com/leiyuxi/cy-security)
+
  **框架说明** 
 
 1. 基于springboot+shiro+freemarker的快速开发框架,代码结构清晰，快速上手使用！
