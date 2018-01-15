@@ -1,6 +1,8 @@
 # cy-fast
 
-ssm版开发框架  cy-security  [https://gitee.com/leiyuxi/cy-security](https://gitee.com/leiyuxi/cy-security)
+ **官网首页  http://www.cymall.xin** 
+
+ **ssm版开发框架  cy-security  [https://gitee.com/leiyuxi/cy-security](https://gitee.com/leiyuxi/cy-security)** 
 
  **框架说明** 
 
@@ -69,8 +71,7 @@ ssm版开发框架  cy-security  [https://gitee.com/leiyuxi/cy-security](https:/
 - 账号密码：admin/admin
 
 
- **如何交流、反馈、参与贡献？** 
-
+- 官网首页 http://www.cymall.xin
 - 项目主页 http://fast.cymall.xin
 - 码云地址 https://gitee.com/leiyuxi/cy-fast
 - 中国开源 https://www.oschina.net/p/cy-fast
