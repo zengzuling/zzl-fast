@@ -4,7 +4,9 @@
 
  **ssm版开发框架  cy-security  [https://gitee.com/leiyuxi/cy-security](https://gitee.com/leiyuxi/cy-security)** 
 
- **c纯前端框架  cy-fast  [http://www.cymall.xin:8084](http://www.cymall.xin:8084)** 
+ **纯前端框架  cy-ui  [http://ui.cymall.xin](http://ui.cymall.xin)** 
+
+ **二维社区，即时通讯  cy-im  [http://im.cymall.xin](http://im.cymall.xin)** 
 
  **框架说明** 
 
