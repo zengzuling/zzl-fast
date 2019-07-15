@@ -3,11 +3,10 @@ package xin.cymall.common.utils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
-import java.util.UUID;
 
 /**
  * @function 功能  生成随机标识
- * @author  创建人 林俊钦
+ * @author  zzl
  * @date  创建日期  Jun 26, 2011
  */
 public class RandomCharUtil {
@@ -21,7 +20,7 @@ public class RandomCharUtil {
     }
     
     /**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description  生成UUID
 	 * @param
 	 * @date 2016-12-31 下午4:37:16
@@ -44,7 +43,7 @@ public class RandomCharUtil {
     }
     
     /**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 随机生成6位数字 
 	 * @param
 	 * @date 2017-2-10 上午11:22:34
@@ -55,7 +54,6 @@ public class RandomCharUtil {
     }
     
     /**
-	 * @author chenyi
 	 * @Description  生成订单号规则
 	 * @param
 	 * @date 2017年7月21日 上午10:32:38 

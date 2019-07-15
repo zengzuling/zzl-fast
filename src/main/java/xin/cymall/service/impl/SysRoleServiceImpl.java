@@ -12,7 +12,6 @@ import xin.cymall.service.SysRoleService;
 import xin.cymall.service.SysUserRoleService;
 import xin.cymall.service.SysUserService;
 
-
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -21,8 +20,7 @@ import java.util.Map;
 /**
  * 角色
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年9月18日 上午9:45:12
  */
 @Service("sysRoleService")

@@ -13,8 +13,7 @@ import java.util.Map;
 /**
  * 用户与角色对应关系
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年9月18日 上午9:45:48
  */
 @Service("sysUserRoleService")

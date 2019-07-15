@@ -9,8 +9,7 @@ import java.util.Map;
 /**
  * 角色
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年9月18日 上午9:42:52
  */
 public interface SysRoleService {

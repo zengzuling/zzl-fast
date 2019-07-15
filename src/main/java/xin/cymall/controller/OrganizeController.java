@@ -5,15 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
 import xin.cymall.common.enumresource.StateEnum;
 import xin.cymall.common.enumresource.TopMenuEnum;
 import xin.cymall.common.log.SysLog;
 import xin.cymall.common.utils.*;
 import xin.cymall.entity.Organize;
-
 import xin.cymall.service.OrganizeService;
 import xin.cymall.service.SysMenuService;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -22,8 +21,7 @@ import java.util.Map;
 /**
  * 部门
  * 
- * @author chenyi
- * @email qq228112142@qq.com
+ * @author zzl
  * @date 2017-11-06 17:39:31
  */
 @Controller

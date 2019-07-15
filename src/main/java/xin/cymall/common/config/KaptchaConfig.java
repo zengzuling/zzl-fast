@@ -7,9 +7,9 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Properties;
 
 /**
- * @author chenyi
+ * @author zzl
  * 生成验证码配置
- * @date 2017-12-20 19:22
+ * @date 2018-8-30 19:22
  */
 @Configuration
 public class KaptchaConfig {

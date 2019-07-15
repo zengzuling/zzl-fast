@@ -1,12 +1,13 @@
 package xin.cymall.common.shiro;
+
+import com.jagregory.shiro.freemarker.ShiroTags;
+import freemarker.template.Configuration;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import com.jagregory.shiro.freemarker.ShiroTags;
-import freemarker.template.Configuration;
 
 /**
- * @Author: chenyi
+ * @Author: zzl
  * @Description: freemarker版shiro标签
  * @Date: 2018/1/1  20:21
  */

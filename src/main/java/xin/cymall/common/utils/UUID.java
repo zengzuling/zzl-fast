@@ -1,7 +1,7 @@
 package xin.cymall.common.utils;
 
 /**
- * Created by chenyi on 2016/12/6.
+ * Created by zzl on 2016/12/6.
  */
 public class UUID {
     public static String[] chars = new String[] { "a", "b", "c", "d", "e", "f",
@@ -36,7 +36,6 @@ public class UUID {
 
     }
     /**
-     * @author chenyi
      * @Description 随机数字
      * @param
      * @date date2017/11/7

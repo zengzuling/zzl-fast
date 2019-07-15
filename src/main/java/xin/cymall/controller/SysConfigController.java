@@ -21,8 +21,7 @@ import java.util.Map;
 /**
  * 系统配置信息表
  *
- * @author chenyi
- * @email qq228112142@qq.com
+ * @author zzl
  * @date 2017-08-02 17:19:29
  */
 @Controller

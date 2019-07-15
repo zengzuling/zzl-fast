@@ -1,8 +1,6 @@
 package xin.cymall.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotBlank;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -11,8 +9,7 @@ import java.util.List;
 /**
  * 系统用户
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年9月18日 上午9:28:55
  */
 public class SysUser implements Serializable {

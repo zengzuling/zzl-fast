@@ -8,8 +8,7 @@ import java.util.Map;
 /**
  * 地产附件表
  * 
- * @author chenyi
- * @email qq228112142@qq.com
+ * @author zzl
  * @date 2017-11-17 11:52:01
  */
 public interface FileService {

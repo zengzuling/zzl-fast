@@ -1,14 +1,16 @@
 package xin.cymall.common.config;
 
 /**
- * @author chenyi
+ * @author zzl
  * @date 2018/1/2 11:34
  */
+
 import com.google.common.collect.Maps;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import xin.cymall.common.xss.XssFilter;
+
 import java.util.Map;
 
 @Configuration

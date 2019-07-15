@@ -11,7 +11,6 @@ public class StringUtil {
 
 	
 	/**
-	 * @author chenyi
 	 * @Description 首字母转小写
 	 * @param
 	 * @date 2017-2-16 下午3:40:32
@@ -23,7 +22,6 @@ public class StringUtil {
 	
 	
 	/**
-	 * @author chenyi
 	 * @Description 首字母转大写
 	 * @param
 	 * @date 2017-2-16 下午3:40:42
@@ -39,7 +37,6 @@ public class StringUtil {
     }
 	
     /**
-	 * @author chenyi
 	 * @Description 验证字符串是否为空
 	 * @param
 	 * @date 2017-2-16 下午3:40:52
@@ -82,7 +79,6 @@ public class StringUtil {
     }  
     
     /**
- 	 * @author chenyi
  	 * @Description 不足位数，左侧补0
  	 * @param
  	 * @date 2017-3-9 上午8:44:07
@@ -103,7 +99,6 @@ public class StringUtil {
     }    
     
     /**
-	 * @author chenyi
 	 * @Description  左侧补足十位
 	 * @param
 	 * @date 2017年7月10日 上午11:20:44 
@@ -113,7 +108,6 @@ public class StringUtil {
     }
     
     /**
-	 * @author chenyi
 	 * @Description  价格补位 首位1+0000
 	 * @param
 	 * @date 2017年7月11日 上午11:13:50 
@@ -124,7 +118,6 @@ public class StringUtil {
     
     
     /**
-	 * @author chenyi
 	 * @Description list<string> 转成串，用逗号隔开
 	 * @param
 	 * @date 2017-3-10 上午10:39:34
@@ -143,7 +136,6 @@ public class StringUtil {
     }   
     
     /**
-	 * @author chenyi
 	 * @Description 时间格式去掉最后的.0
 	 * @param
 	 * @date 2017-5-2 下午4:02:07

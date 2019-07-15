@@ -6,8 +6,7 @@ import java.util.Date;
 /**
  * 日期处理
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年12月21日 下午12:53:33
  */
 public class DateUtils {

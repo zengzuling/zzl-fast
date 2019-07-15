@@ -22,7 +22,6 @@ import java.util.Map;
 
 /**
  * @param
- * @author chenyi
  * @Description 系统菜单
  * @date 2017/6/27 17:28
  **/
@@ -177,7 +176,6 @@ public class SysMenuController extends AbstractController {
 
     /**
      * @param
-     * @author chenyi
      * @Description 跳转到新增页面
      * @date 2017/6/27 11:17
      **/
@@ -189,7 +187,6 @@ public class SysMenuController extends AbstractController {
 
     /**
      * @param
-     * @author chenyi
      * @Description 跳转到修改页面
      * @date 2017/6/27 11:17
      **/
@@ -263,7 +260,8 @@ public class SysMenuController extends AbstractController {
     @RequestMapping("/user")
     public R user() {
         List<SysMenu> menuList = sysMenuService.getUserMenuList(getUserId());
-
+        //去除开发工具
+//        menuList.remove(0);
         return R.ok().put("menuList", menuList);
     }
 

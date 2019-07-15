@@ -3,9 +3,8 @@ package xin.cymall.common.exception;
 /**
  * 自定义异常
  * 
- * @author chenyi
- * @email 228112142@qq.com
- * @date 2016年10月27日 下午10:11:27
+ * @author zzl
+ * @date 2017年10月27日 下午10:11:27
  */
 public class MyException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

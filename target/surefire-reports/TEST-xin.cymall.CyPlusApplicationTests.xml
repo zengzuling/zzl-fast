@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="xin.cymall.CyPlusApplicationTests" time="0.011" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="idea.version" value="2017.1.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8\jre\bin"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\idea-workspace\projects\cy-fast"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\idea-workspace\projects\cy-fast"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files\Java\apache-maven-3.3.9\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\DELL\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Program Files (x86)\Common Files\NetSarang;%JAVA_HOME%\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0 \;C:\Program Files\mysql\mysql-5.6.24-win32\bin\;C:\Program Files\Java\apache-maven-3.3.9\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\SlikSvn\bin;C:\Program Files\mysql\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\DELL"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="DELL"/>
+    <property name="java.class.path" value="C:\Program Files\Java\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.1.1\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.1.1 -s C:\Program Files\Java\apache-maven-3.3.9\conf\settings.xml clean compile package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\Java\apache-maven-3.3.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="contextLoads" classname="xin.cymall.CyPlusApplicationTests" time="0.011">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:108)
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:62)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.scanDocumentation(DocumentationPluginsBootstrapper.java:101)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:87)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:50)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</error>
+    <system-out><![CDATA[2018-08-31 17:14:22.634  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [xin.cymall.CyPlusApplicationTests], using SpringBootContextLoader
+2018-08-31 17:14:22.657  INFO   --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [xin.cymall.CyPlusApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-08-31 17:14:22.657  INFO   --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [xin.cymall.CyPlusApplicationTests]: CyPlusApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-08-31 17:14:22.750  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration xin.cymall.CyFastApplication for test class xin.cymall.CyPlusApplicationTests
+2018-08-31 17:14:22.758  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-08-31 17:14:22.774  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1afd44cb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6973b51b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1ab3a8c8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@43195e57, org.springframework.test.context.transaction.TransactionalTestExecutionListener@333291e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@479d31f3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@40ef3420, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@498d318c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6e171cd7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@402bba4f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@795cd85e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59fd97a8]
+2018-08-31 17:14:22.779  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [xin.cymall.CyPlusApplicationTests], using SpringBootContextLoader
+2018-08-31 17:14:22.780  INFO   --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [xin.cymall.CyPlusApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-08-31 17:14:22.781  INFO   --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [xin.cymall.CyPlusApplicationTests]: CyPlusApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-08-31 17:14:22.786  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration xin.cymall.CyFastApplication for test class xin.cymall.CyPlusApplicationTests
+2018-08-31 17:14:22.792  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-08-31 17:14:22.796  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@223d2c72, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8f4ea7c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@436813f3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@74fe5c40, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3febb011, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@10e31a9a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@131774fe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@158d2680, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@77847718, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7f3b84b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@57a3af25, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b662a77]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.9.RELEASE)
+
+2018-08-31 17:14:23.148  INFO 9444 --- [           main] xin.cymall.CyPlusApplicationTests        : Starting CyPlusApplicationTests on gy-zengzuling with PID 9444 (started by DELL in D:\idea-workspace\projects\cy-fast)
+2018-08-31 17:14:23.149 DEBUG 9444 --- [           main] xin.cymall.CyPlusApplicationTests        : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-08-31 17:14:23.149  INFO 9444 --- [           main] xin.cymall.CyPlusApplicationTests        : The following profiles are active: dev
+2018-08-31 17:14:23.210  INFO 9444 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@18271936: startup date [Fri Aug 31 17:14:23 CST 2018]; root of context hierarchy
+2018-08-31 17:14:23.631  INFO 9444 --- [kground-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.6.Final
+2018-08-31 17:14:24.481  INFO 9444 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-08-31 17:14:24.809  INFO 9444 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-08-31 17:14:24.816  INFO 9444 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-08-31 17:14:24.833  INFO 9444 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-31 17:14:24.864  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [xin.cymall.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$ae56d8dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:24.976  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [xin.cymall.common.config.ShiroConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.161  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration' of type [org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$$EnhancerBySpringCGLIB$$c5bd698a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.168  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'stringOrNumberMigrationVersionConverter' of type [org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$StringOrNumberToMigrationVersionConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.184  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.189  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$ce182350] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.197  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [xin.cymall.common.config.DruidConfig$$EnhancerBySpringCGLIB$$2fd3c4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.275  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'druidDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.579  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.591  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.593  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.595  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserDao' of type [com.sun.proxy.$Proxy84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.598  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.600  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuDao' of type [com.sun.proxy.$Proxy85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:25.601  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [xin.cymall.common.shiro.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:26.212  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:26.297  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:26.356  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9b43d220] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:26.663  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:26.670  INFO 9444 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-31 17:14:26.952  INFO 9444 --- [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-08-31 17:14:28.591  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.lang.String xin.cymall.common.exception.BaseErrorPage.error()
+2018-08-31 17:14:28.594  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/enable]}" onto public xin.cymall.common.utils.R xin.cymall.controller.AreaController.enable(java.lang.String[])
+2018-08-31 17:14:28.594  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/add]}" onto public java.lang.String xin.cymall.controller.AreaController.add()
+2018-08-31 17:14:28.594  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/limit]}" onto public xin.cymall.common.utils.R xin.cymall.controller.AreaController.limit(java.lang.String[])
+2018-08-31 17:14:28.594  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/update]}" onto public xin.cymall.common.utils.R xin.cymall.controller.AreaController.update(xin.cymall.entity.Area)
+2018-08-31 17:14:28.595  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/delete]}" onto public xin.cymall.common.utils.R xin.cymall.controller.AreaController.delete(java.lang.String[])
+2018-08-31 17:14:28.595  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/list]}" onto public java.lang.String xin.cymall.controller.AreaController.list()
+2018-08-31 17:14:28.595  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/save]}" onto public xin.cymall.common.utils.R xin.cymall.controller.AreaController.save(xin.cymall.entity.Area)
+2018-08-31 17:14:28.595  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/info/{areaId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.AreaController.info(java.lang.String)
+2018-08-31 17:14:28.596  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.AreaController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.596  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/normalList/{parentAreaId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.AreaController.normalList(java.lang.String)
+2018-08-31 17:14:28.596  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/area/edit/{id}]}" onto public java.lang.String xin.cymall.controller.AreaController.edit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,java.lang.String)
+2018-08-31 17:14:28.599  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/enable]}" onto public xin.cymall.common.utils.R xin.cymall.controller.CommparaController.enable(java.lang.Integer[])
+2018-08-31 17:14:28.600  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/add]}" onto public java.lang.String xin.cymall.controller.CommparaController.add()
+2018-08-31 17:14:28.600  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/limit]}" onto public xin.cymall.common.utils.R xin.cymall.controller.CommparaController.limit(java.lang.Integer[])
+2018-08-31 17:14:28.600  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/update]}" onto public xin.cymall.common.utils.R xin.cymall.controller.CommparaController.update(xin.cymall.entity.Commpara)
+2018-08-31 17:14:28.600  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/delete]}" onto public xin.cymall.common.utils.R xin.cymall.controller.CommparaController.delete(java.lang.Integer[])
+2018-08-31 17:14:28.603  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/list]}" onto public java.lang.String xin.cymall.controller.CommparaController.list()
+2018-08-31 17:14:28.603  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/save]}" onto public xin.cymall.common.utils.R xin.cymall.controller.CommparaController.save(xin.cymall.entity.Commpara)
+2018-08-31 17:14:28.604  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/info/{paraId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.CommparaController.info(java.lang.Integer)
+2018-08-31 17:14:28.605  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.CommparaController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.606  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/commpara/edit/{id}]}" onto public java.lang.String xin.cymall.controller.CommparaController.edit(org.springframework.ui.Model,java.lang.Integer)
+2018-08-31 17:14:28.608  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getData/getFile/{relationId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.GetDataController.getFile(java.lang.String)
+2018-08-31 17:14:28.609  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getData/getEnum]}" onto public xin.cymall.common.utils.R xin.cymall.controller.GetDataController.getEnum(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-08-31 17:14:28.609  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getData/getCodeValues]}" onto public xin.cymall.common.utils.R xin.cymall.controller.GetDataController.getCodeValues(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.610  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getData/upload]}" onto public xin.cymall.common.utils.R xin.cymall.controller.GetDataController.upload(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2018-08-31 17:14:28.610  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getData/uploads]}" onto public xin.cymall.common.utils.R xin.cymall.controller.GetDataController.uploads(org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-08-31 17:14:28.610  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getData/deleteFile/{fileId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.GetDataController.uploadFile(java.lang.String) throws java.lang.Exception
+2018-08-31 17:14:28.610  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getData/deleteByRelationId/{relationId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.GetDataController.deleteByRelationId(java.lang.String) throws java.lang.Exception
+2018-08-31 17:14:28.612  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/enable]}" onto public xin.cymall.common.utils.R xin.cymall.controller.OrganizeController.enable(java.lang.String[])
+2018-08-31 17:14:28.613  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/add]}" onto public java.lang.String xin.cymall.controller.OrganizeController.add()
+2018-08-31 17:14:28.613  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/limit]}" onto public xin.cymall.common.utils.R xin.cymall.controller.OrganizeController.limit(java.lang.String[])
+2018-08-31 17:14:28.613  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/update]}" onto public xin.cymall.common.utils.R xin.cymall.controller.OrganizeController.update(xin.cymall.entity.Organize)
+2018-08-31 17:14:28.613  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/delete]}" onto public xin.cymall.common.utils.R xin.cymall.controller.OrganizeController.delete(java.lang.String[])
+2018-08-31 17:14:28.613  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/list]}" onto public java.lang.String xin.cymall.controller.OrganizeController.list()
+2018-08-31 17:14:28.614  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/save]}" onto public xin.cymall.common.utils.R xin.cymall.controller.OrganizeController.save(xin.cymall.entity.Organize)
+2018-08-31 17:14:28.614  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/info/{orgId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.OrganizeController.info(java.lang.String)
+2018-08-31 17:14:28.614  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.OrganizeController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.616  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/edit/{id}]}" onto public java.lang.String xin.cymall.controller.OrganizeController.edit(org.springframework.ui.Model,java.lang.String)
+2018-08-31 17:14:28.617  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/organize/select]}" onto public xin.cymall.common.utils.R xin.cymall.controller.OrganizeController.select()
+2018-08-31 17:14:28.619  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/config/add]}" onto public java.lang.String xin.cymall.controller.SysConfigController.add()
+2018-08-31 17:14:28.619  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/config/update]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysConfigController.update(xin.cymall.entity.SysConfig)
+2018-08-31 17:14:28.620  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/config/delete]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysConfigController.delete(java.lang.Long[])
+2018-08-31 17:14:28.620  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/config/list]}" onto public java.lang.String xin.cymall.controller.SysConfigController.list()
+2018-08-31 17:14:28.622  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/config/save]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysConfigController.save(xin.cymall.entity.SysConfig)
+2018-08-31 17:14:28.622  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/config/info/{id}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysConfigController.info(java.lang.Long)
+2018-08-31 17:14:28.622  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/config/rule]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysConfigController.rule(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.623  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/config/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysConfigController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.623  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/config/edit/{id}]}" onto public java.lang.String xin.cymall.controller.SysConfigController.edit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,java.lang.Long)
+2018-08-31 17:14:28.623  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/generator/list]}" onto public java.lang.String xin.cymall.controller.SysGeneratorController.list()
+2018-08-31 17:14:28.624  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/generator/code]}" onto public void xin.cymall.controller.SysGeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-08-31 17:14:28.624  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/generator/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysGeneratorController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.625  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/log/add]}" onto public java.lang.String xin.cymall.controller.SysLogController.add()
+2018-08-31 17:14:28.625  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/log/update]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysLogController.update(xin.cymall.entity.SysLog)
+2018-08-31 17:14:28.625  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/log/list]}" onto public java.lang.String xin.cymall.controller.SysLogController.list()
+2018-08-31 17:14:28.625  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/log/save]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysLogController.save(xin.cymall.entity.SysLog)
+2018-08-31 17:14:28.625  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/log/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysLogController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.625  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/log/edit/{id}]}" onto public java.lang.String xin.cymall.controller.SysLogController.edit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,java.lang.Long)
+2018-08-31 17:14:28.626  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/log/deleteBatch]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysLogController.deleteBatch(java.lang.Long[])
+2018-08-31 17:14:28.626  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tests]}" onto public java.lang.String xin.cymall.controller.SysLoginController.test()
+2018-08-31 17:14:28.626  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/login],methods=[POST]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysLoginController.login(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+2018-08-31 17:14:28.626  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String xin.cymall.controller.SysLoginController.logout()
+2018-08-31 17:14:28.626  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/captcha.jpg]}" onto public void xin.cymall.controller.SysLoginController.captcha(javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-08-31 17:14:28.628  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/add]}" onto public java.lang.String xin.cymall.controller.SysMenuController.add()
+2018-08-31 17:14:28.629  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/update]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.update(xin.cymall.entity.SysMenu)
+2018-08-31 17:14:28.629  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/delete]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.delete(java.lang.Long[])
+2018-08-31 17:14:28.629  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/list]}" onto public java.lang.String xin.cymall.controller.SysMenuController.list()
+2018-08-31 17:14:28.629  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/save]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.save(xin.cymall.entity.SysMenu)
+2018-08-31 17:14:28.629  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/perms]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.perms()
+2018-08-31 17:14:28.630  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/info/{menuId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.info(java.lang.Long)
+2018-08-31 17:14:28.630  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.630  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/edit/{id}]}" onto public java.lang.String xin.cymall.controller.SysMenuController.edit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,java.lang.Long)
+2018-08-31 17:14:28.630  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/select]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.select()
+2018-08-31 17:14:28.630  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/user]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.user()
+2018-08-31 17:14:28.630  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/treePerms]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.treePerms()
+2018-08-31 17:14:28.631  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/menu/menuList]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysMenuController.menuList()
+2018-08-31 17:14:28.632  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/enable]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysOssController.enable(java.lang.String[])
+2018-08-31 17:14:28.632  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/add]}" onto public java.lang.String xin.cymall.controller.SysOssController.add()
+2018-08-31 17:14:28.632  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/limit]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysOssController.limit(java.lang.String[])
+2018-08-31 17:14:28.632  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/update]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysOssController.update(xin.cymall.entity.SysOss)
+2018-08-31 17:14:28.632  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/delete]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysOssController.delete(java.lang.String[])
+2018-08-31 17:14:28.633  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/list]}" onto public java.lang.String xin.cymall.controller.SysOssController.list()
+2018-08-31 17:14:28.633  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/save]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysOssController.save(xin.cymall.entity.SysOss)
+2018-08-31 17:14:28.633  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/info/{bucket}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysOssController.info(java.lang.String)
+2018-08-31 17:14:28.633  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysOssController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.633  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysoss/edit/{id}]}" onto public java.lang.String xin.cymall.controller.SysOssController.edit(org.springframework.ui.Model,java.lang.String)
+2018-08-31 17:14:28.633  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index/main]}" onto public java.lang.String xin.cymall.controller.SysPageController.main()
+2018-08-31 17:14:28.634  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{module}/{url}.html]}" onto public java.lang.String xin.cymall.controller.SysPageController.page(java.lang.String,java.lang.String)
+2018-08-31 17:14:28.635  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/add]}" onto public java.lang.String xin.cymall.controller.SysRoleController.add()
+2018-08-31 17:14:28.635  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/update]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysRoleController.update(xin.cymall.entity.SysRole)
+2018-08-31 17:14:28.635  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/delete]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysRoleController.delete(java.lang.Long[])
+2018-08-31 17:14:28.635  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/list]}" onto public java.lang.String xin.cymall.controller.SysRoleController.list()
+2018-08-31 17:14:28.635  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/save]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysRoleController.save(xin.cymall.entity.SysRole)
+2018-08-31 17:14:28.636  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/info/{roleId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysRoleController.info(java.lang.Long)
+2018-08-31 17:14:28.636  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysRoleController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.636  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/edit/{id}]}" onto public java.lang.String xin.cymall.controller.SysRoleController.edit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,java.lang.Long)
+2018-08-31 17:14:28.636  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/select]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysRoleController.select()
+2018-08-31 17:14:28.636  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/role/findAll]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysRoleController.findAll()
+2018-08-31 17:14:28.637  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/add]}" onto public java.lang.String xin.cymall.controller.SysUserController.add()
+2018-08-31 17:14:28.638  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/update]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysUserController.update(xin.cymall.entity.SysUser)
+2018-08-31 17:14:28.638  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/delete]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysUserController.delete(java.lang.Long[])
+2018-08-31 17:14:28.638  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/list]}" onto public java.lang.String xin.cymall.controller.SysUserController.list()
+2018-08-31 17:14:28.638  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/save]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysUserController.save(xin.cymall.entity.SysUser)
+2018-08-31 17:14:28.638  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/info/{userId}]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysUserController.info(java.lang.Long)
+2018-08-31 17:14:28.639  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/info]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysUserController.info()
+2018-08-31 17:14:28.639  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/password]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysUserController.password(java.lang.String,java.lang.String)
+2018-08-31 17:14:28.639  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/listData]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysUserController.listData(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-31 17:14:28.639  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/edit/{id}]}" onto public java.lang.String xin.cymall.controller.SysUserController.edit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,java.lang.Long)
+2018-08-31 17:14:28.639  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sys/user/initPassword]}" onto public xin.cymall.common.utils.R xin.cymall.controller.SysUserController.initPassword(java.lang.Long[])
+2018-08-31 17:14:28.640  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-08-31 17:14:28.641  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-08-31 17:14:28.641  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-08-31 17:14:28.642  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-08-31 17:14:29.609  INFO 9444 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@18271936: startup date [Fri Aug 31 17:14:23 CST 2018]; root of context hierarchy
+2018-08-31 17:14:29.795  INFO 9444 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-31 17:14:29.796  INFO 9444 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars*] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-31 17:14:29.796  INFO 9444 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-31 17:14:29.796  INFO 9444 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-31 17:14:29.839  INFO 9444 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-08-31 17:14:29.891  INFO 9444 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-31 17:14:29.981  INFO 9444 --- [           main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-08-31 17:14:30.158  INFO 9444 --- [           main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.3 by Boxfuse
+2018-08-31 17:14:31.018  INFO 9444 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-08-31 17:14:31.026  INFO 9444 --- [           main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3306/cy-fast (MySQL 5.7)
+2018-08-31 17:14:31.845  INFO 9444 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.768s)
+2018-08-31 17:14:31.867  INFO 9444 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `cy-fast`: 1
+2018-08-31 17:14:31.868  INFO 9444 --- [           main] o.f.core.internal.command.DbMigrate      : Schema `cy-fast` is up to date. No migration necessary.
+2018-08-31 17:14:32.076  INFO 9444 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2018-08-31 17:14:32.631  INFO 9444 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-08-31 17:14:32.631  INFO 9444 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-08-31 17:14:32.632  INFO 9444 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:dev:-1.errorChannel' has 1 subscriber(s).
+2018-08-31 17:14:32.632  INFO 9444 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2018-08-31 17:14:32.641  INFO 9444 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-31 17:14:32.668  INFO 9444 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-08-31 17:14:32.678  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-31 17:14:32.683  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.685  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: add belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.687  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.687  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delete belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.687  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.687  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: edit belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.688  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.688  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: enable belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.688  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.688  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: info belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.688  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.688  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: limit belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.689  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:32.689  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.689  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:32.689  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.691  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:32.692  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: normalList belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.693  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:32.693  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: save belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.693  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:32.693  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='area-controller', position=0, controller=xin.cymall.controller.AreaController}]] 
+2018-08-31 17:14:32.693  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method captcha was sys-login-controller
+2018-08-31 17:14:32.693  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: captcha belongs to groups: [[ResourceGroup{groupName='sys-login-controller', position=0, controller=xin.cymall.controller.SysLoginController}]] 
+2018-08-31 17:14:32.694  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was commpara-controller
+2018-08-31 17:14:32.694  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: add belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.694  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was commpara-controller
+2018-08-31 17:14:32.694  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delete belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.694  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was commpara-controller
+2018-08-31 17:14:32.695  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: edit belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.695  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was commpara-controller
+2018-08-31 17:14:32.695  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: enable belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.695  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was commpara-controller
+2018-08-31 17:14:32.695  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: info belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.695  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was commpara-controller
+2018-08-31 17:14:32.695  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: limit belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.696  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was commpara-controller
+2018-08-31 17:14:32.696  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.696  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was commpara-controller
+2018-08-31 17:14:32.696  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.697  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was commpara-controller
+2018-08-31 17:14:32.697  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: save belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.697  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was commpara-controller
+2018-08-31 17:14:32.697  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='commpara-controller', position=0, controller=xin.cymall.controller.CommparaController}]] 
+2018-08-31 17:14:32.697  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteByRelationId was get-data-controller
+2018-08-31 17:14:32.697  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteByRelationId belongs to groups: [[ResourceGroup{groupName='get-data-controller', position=0, controller=xin.cymall.controller.GetDataController}]] 
+2018-08-31 17:14:32.697  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method uploadFile was get-data-controller
+2018-08-31 17:14:32.697  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: uploadFile belongs to groups: [[ResourceGroup{groupName='get-data-controller', position=0, controller=xin.cymall.controller.GetDataController}]] 
+2018-08-31 17:14:32.698  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCodeValues was get-data-controller
+2018-08-31 17:14:32.698  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getCodeValues belongs to groups: [[ResourceGroup{groupName='get-data-controller', position=0, controller=xin.cymall.controller.GetDataController}]] 
+2018-08-31 17:14:32.698  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getEnum was get-data-controller
+2018-08-31 17:14:32.698  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getEnum belongs to groups: [[ResourceGroup{groupName='get-data-controller', position=0, controller=xin.cymall.controller.GetDataController}]] 
+2018-08-31 17:14:32.698  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getFile was get-data-controller
+2018-08-31 17:14:32.698  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getFile belongs to groups: [[ResourceGroup{groupName='get-data-controller', position=0, controller=xin.cymall.controller.GetDataController}]] 
+2018-08-31 17:14:32.699  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method upload was get-data-controller
+2018-08-31 17:14:32.699  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: upload belongs to groups: [[ResourceGroup{groupName='get-data-controller', position=0, controller=xin.cymall.controller.GetDataController}]] 
+2018-08-31 17:14:32.700  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method uploads was get-data-controller
+2018-08-31 17:14:32.700  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: uploads belongs to groups: [[ResourceGroup{groupName='get-data-controller', position=0, controller=xin.cymall.controller.GetDataController}]] 
+2018-08-31 17:14:32.701  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method main was sys-page-controller
+2018-08-31 17:14:32.701  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: main belongs to groups: [[ResourceGroup{groupName='sys-page-controller', position=0, controller=xin.cymall.controller.SysPageController}]] 
+2018-08-31 17:14:32.701  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method logout was sys-login-controller
+2018-08-31 17:14:32.701  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: logout belongs to groups: [[ResourceGroup{groupName='sys-login-controller', position=0, controller=xin.cymall.controller.SysLoginController}]] 
+2018-08-31 17:14:32.701  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was organize-controller
+2018-08-31 17:14:32.701  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: add belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.701  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was organize-controller
+2018-08-31 17:14:32.701  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delete belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.702  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was organize-controller
+2018-08-31 17:14:32.702  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: edit belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.702  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was organize-controller
+2018-08-31 17:14:32.702  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: enable belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.702  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was organize-controller
+2018-08-31 17:14:32.702  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: info belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.703  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was organize-controller
+2018-08-31 17:14:32.703  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: limit belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.703  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was organize-controller
+2018-08-31 17:14:32.703  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.703  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was organize-controller
+2018-08-31 17:14:32.703  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.704  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was organize-controller
+2018-08-31 17:14:32.704  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: save belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.704  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method select was organize-controller
+2018-08-31 17:14:32.704  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: select belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.705  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was organize-controller
+2018-08-31 17:14:32.705  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='organize-controller', position=0, controller=xin.cymall.controller.OrganizeController}]] 
+2018-08-31 17:14:32.705  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was sys-config-controller
+2018-08-31 17:14:32.705  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: add belongs to groups: [[ResourceGroup{groupName='sys-config-controller', position=0, controller=xin.cymall.controller.SysConfigController}]] 
+2018-08-31 17:14:32.705  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was sys-config-controller
+2018-08-31 17:14:32.705  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delete belongs to groups: [[ResourceGroup{groupName='sys-config-controller', position=0, controller=xin.cymall.controller.SysConfigController}]] 
+2018-08-31 17:14:32.705  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was sys-config-controller
+2018-08-31 17:14:32.706  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: edit belongs to groups: [[ResourceGroup{groupName='sys-config-controller', position=0, controller=xin.cymall.controller.SysConfigController}]] 
+2018-08-31 17:14:32.706  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was sys-config-controller
+2018-08-31 17:14:32.706  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: info belongs to groups: [[ResourceGroup{groupName='sys-config-controller', position=0, controller=xin.cymall.controller.SysConfigController}]] 
+2018-08-31 17:14:32.706  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was sys-config-controller
+2018-08-31 17:14:32.706  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='sys-config-controller', position=0, controller=xin.cymall.controller.SysConfigController}]] 
+2018-08-31 17:14:32.707  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was sys-config-controller
+2018-08-31 17:14:32.707  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='sys-config-controller', position=0, controller=xin.cymall.controller.SysConfigController}]] 
+2018-08-31 17:14:32.707  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method rule was sys-config-controller
+2018-08-31 17:14:32.707  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: rule belongs to groups: [[ResourceGroup{groupName='sys-config-controller', position=0, controller=xin.cymall.controller.SysConfigController}]] 
+2018-08-31 17:14:32.708  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was sys-config-controller
+2018-08-31 17:14:32.708  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: save belongs to groups: [[ResourceGroup{groupName='sys-config-controller', position=0, controller=xin.cymall.controller.SysConfigController}]] 
+2018-08-31 17:14:32.709  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was sys-config-controller
+2018-08-31 17:14:32.709  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='sys-config-controller', position=0, controller=xin.cymall.controller.SysConfigController}]] 
+2018-08-31 17:14:32.709  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method code was sys-generator-controller
+2018-08-31 17:14:32.709  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: code belongs to groups: [[ResourceGroup{groupName='sys-generator-controller', position=0, controller=xin.cymall.controller.SysGeneratorController}]] 
+2018-08-31 17:14:32.709  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was sys-generator-controller
+2018-08-31 17:14:32.710  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='sys-generator-controller', position=0, controller=xin.cymall.controller.SysGeneratorController}]] 
+2018-08-31 17:14:32.710  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was sys-generator-controller
+2018-08-31 17:14:32.710  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='sys-generator-controller', position=0, controller=xin.cymall.controller.SysGeneratorController}]] 
+2018-08-31 17:14:32.710  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was sys-log-controller
+2018-08-31 17:14:32.710  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: add belongs to groups: [[ResourceGroup{groupName='sys-log-controller', position=0, controller=xin.cymall.controller.SysLogController}]] 
+2018-08-31 17:14:32.710  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteBatch was sys-log-controller
+2018-08-31 17:14:32.710  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteBatch belongs to groups: [[ResourceGroup{groupName='sys-log-controller', position=0, controller=xin.cymall.controller.SysLogController}]] 
+2018-08-31 17:14:32.710  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was sys-log-controller
+2018-08-31 17:14:32.711  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: edit belongs to groups: [[ResourceGroup{groupName='sys-log-controller', position=0, controller=xin.cymall.controller.SysLogController}]] 
+2018-08-31 17:14:32.711  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was sys-log-controller
+2018-08-31 17:14:32.711  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='sys-log-controller', position=0, controller=xin.cymall.controller.SysLogController}]] 
+2018-08-31 17:14:32.711  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was sys-log-controller
+2018-08-31 17:14:32.711  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='sys-log-controller', position=0, controller=xin.cymall.controller.SysLogController}]] 
+2018-08-31 17:14:32.713  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was sys-log-controller
+2018-08-31 17:14:32.713  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: save belongs to groups: [[ResourceGroup{groupName='sys-log-controller', position=0, controller=xin.cymall.controller.SysLogController}]] 
+2018-08-31 17:14:32.713  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was sys-log-controller
+2018-08-31 17:14:32.713  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='sys-log-controller', position=0, controller=xin.cymall.controller.SysLogController}]] 
+2018-08-31 17:14:32.714  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was sys-login-controller
+2018-08-31 17:14:32.714  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: login belongs to groups: [[ResourceGroup{groupName='sys-login-controller', position=0, controller=xin.cymall.controller.SysLoginController}]] 
+2018-08-31 17:14:32.714  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was sys-menu-controller
+2018-08-31 17:14:32.714  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: add belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.714  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was sys-menu-controller
+2018-08-31 17:14:32.715  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delete belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.716  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was sys-menu-controller
+2018-08-31 17:14:32.716  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: edit belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.716  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was sys-menu-controller
+2018-08-31 17:14:32.716  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: info belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.717  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was sys-menu-controller
+2018-08-31 17:14:32.717  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.717  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was sys-menu-controller
+2018-08-31 17:14:32.717  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.717  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method menuList was sys-menu-controller
+2018-08-31 17:14:32.717  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: menuList belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.717  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method perms was sys-menu-controller
+2018-08-31 17:14:32.717  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: perms belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.717  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was sys-menu-controller
+2018-08-31 17:14:32.718  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: save belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.718  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method select was sys-menu-controller
+2018-08-31 17:14:32.718  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: select belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.718  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method treePerms was sys-menu-controller
+2018-08-31 17:14:32.718  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: treePerms belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.718  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was sys-menu-controller
+2018-08-31 17:14:32.718  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.723  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method user was sys-menu-controller
+2018-08-31 17:14:32.724  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: user belongs to groups: [[ResourceGroup{groupName='sys-menu-controller', position=0, controller=xin.cymall.controller.SysMenuController}]] 
+2018-08-31 17:14:32.727  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was sys-role-controller
+2018-08-31 17:14:32.727  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: add belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.727  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was sys-role-controller
+2018-08-31 17:14:32.727  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delete belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.728  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was sys-role-controller
+2018-08-31 17:14:32.728  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: edit belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.728  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findAll was sys-role-controller
+2018-08-31 17:14:32.728  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: findAll belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.728  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was sys-role-controller
+2018-08-31 17:14:32.728  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: info belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.728  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was sys-role-controller
+2018-08-31 17:14:32.728  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.729  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was sys-role-controller
+2018-08-31 17:14:32.729  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.729  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was sys-role-controller
+2018-08-31 17:14:32.729  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: save belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.729  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method select was sys-role-controller
+2018-08-31 17:14:32.729  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: select belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.731  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was sys-role-controller
+2018-08-31 17:14:32.731  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='sys-role-controller', position=0, controller=xin.cymall.controller.SysRoleController}]] 
+2018-08-31 17:14:32.732  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was sys-user-controller
+2018-08-31 17:14:32.732  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: add belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.733  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was sys-user-controller
+2018-08-31 17:14:32.733  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delete belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.733  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was sys-user-controller
+2018-08-31 17:14:32.733  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: edit belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.733  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was sys-user-controller
+2018-08-31 17:14:32.733  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: info belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.733  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was sys-user-controller
+2018-08-31 17:14:32.733  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: info belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.734  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method initPassword was sys-user-controller
+2018-08-31 17:14:32.734  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: initPassword belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.734  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was sys-user-controller
+2018-08-31 17:14:32.734  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.735  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was sys-user-controller
+2018-08-31 17:14:32.735  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.735  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method password was sys-user-controller
+2018-08-31 17:14:32.735  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: password belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.735  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was sys-user-controller
+2018-08-31 17:14:32.735  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: save belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.735  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was sys-user-controller
+2018-08-31 17:14:32.735  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='sys-user-controller', position=0, controller=xin.cymall.controller.SysUserController}]] 
+2018-08-31 17:14:32.736  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was sys-oss-controller
+2018-08-31 17:14:32.736  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: add belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.736  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was sys-oss-controller
+2018-08-31 17:14:32.736  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delete belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.736  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was sys-oss-controller
+2018-08-31 17:14:32.736  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: edit belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.736  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was sys-oss-controller
+2018-08-31 17:14:32.736  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: enable belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.736  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was sys-oss-controller
+2018-08-31 17:14:32.737  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: info belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.737  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was sys-oss-controller
+2018-08-31 17:14:32.737  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: limit belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.737  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was sys-oss-controller
+2018-08-31 17:14:32.737  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listData belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.737  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was sys-oss-controller
+2018-08-31 17:14:32.737  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: list belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.737  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was sys-oss-controller
+2018-08-31 17:14:32.737  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: save belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.738  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was sys-oss-controller
+2018-08-31 17:14:32.738  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='sys-oss-controller', position=0, controller=xin.cymall.controller.SysOssController}]] 
+2018-08-31 17:14:32.738  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method test was sys-login-controller
+2018-08-31 17:14:32.738  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: test belongs to groups: [[ResourceGroup{groupName='sys-login-controller', position=0, controller=xin.cymall.controller.SysLoginController}]] 
+2018-08-31 17:14:32.738  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method page was sys-page-controller
+2018-08-31 17:14:32.738  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: page belongs to groups: [[ResourceGroup{groupName='sys-page-controller', position=0, controller=xin.cymall.controller.SysPageController}]] 
+2018-08-31 17:14:32.742  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/organize-controller Description: organize-controller Position: 0
+2018-08-31 17:14:32.743  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sys-page-controller Description: sys-page-controller Position: 0
+2018-08-31 17:14:32.743  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/get-data-controller Description: get-data-controller Position: 0
+2018-08-31 17:14:32.743  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/commpara-controller Description: commpara-controller Position: 0
+2018-08-31 17:14:32.743  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sys-oss-controller Description: sys-oss-controller Position: 0
+2018-08-31 17:14:32.744  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sys-role-controller Description: sys-role-controller Position: 0
+2018-08-31 17:14:32.744  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sys-user-controller Description: sys-user-controller Position: 0
+2018-08-31 17:14:32.744  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sys-menu-controller Description: sys-menu-controller Position: 0
+2018-08-31 17:14:32.744  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/area-controller Description: area-controller Position: 0
+2018-08-31 17:14:32.744  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sys-login-controller Description: sys-login-controller Position: 0
+2018-08-31 17:14:32.745  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sys-generator-controller Description: sys-generator-controller Position: 0
+2018-08-31 17:14:32.745  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sys-config-controller Description: sys-config-controller Position: 0
+2018-08-31 17:14:32.745  INFO 9444 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sys-log-controller Description: sys-log-controller Position: 0
+2018-08-31 17:14:32.774  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-08-31 17:14:32.774  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-08-31 17:14:32.781  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-08-31 17:14:32.781  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-08-31 17:14:32.787  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/add.xin.cymall.controller.AreaController.add.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.787  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/add.xin.cymall.controller.AreaController.add.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.799  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.805  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.809  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.809  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.811  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.813  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.817  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.818  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.821  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.822  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.823  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.824  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.825  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.826  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.827  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.828  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method add was area-controller
+2018-08-31 17:14:32.833  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String[](false)
+2018-08-31 17:14:32.833  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String[](false)
+2018-08-31 17:14:32.833  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String[](false)
+2018-08-31 17:14:32.833  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String[](false)
+2018-08-31 17:14:32.835  INFO 9444 --- [           main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.lang.String[](false)
+2018-08-31 17:14:32.835  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.lang.String[](false)
+2018-08-31 17:14:32.840  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.841  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.841  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.841  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.843  INFO 9444 --- [           main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.843  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.866  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/delete.xin.cymall.controller.AreaController.delete.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.866  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/delete.xin.cymall.controller.AreaController.delete.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.875  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.877  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.879  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.880  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.883  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.884  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.886  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.887  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.889  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.889  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.891  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.892  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.895  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.896  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.897  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.898  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was area-controller
+2018-08-31 17:14:32.900  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-08-31 17:14:32.900  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-08-31 17:14:32.900  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-08-31 17:14:32.901  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-08-31 17:14:32.901  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/edit/{id}.xin.cymall.controller.AreaController.edit.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.901  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/edit/{id}.xin.cymall.controller.AreaController.edit.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.905  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.905  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.909  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.910  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.912  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.913  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.917  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.918  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.920  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.921  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.923  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.924  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.926  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.927  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.929  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.930  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method edit was area-controller
+2018-08-31 17:14:32.931  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String[](false)
+2018-08-31 17:14:32.931  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String[](false)
+2018-08-31 17:14:32.931  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String[](false)
+2018-08-31 17:14:32.931  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String[](false)
+2018-08-31 17:14:32.931  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.932  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.932  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.932  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.932  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/enable.xin.cymall.controller.AreaController.enable.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.932  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/enable.xin.cymall.controller.AreaController.enable.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.934  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.934  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.936  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.937  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.938  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.939  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.941  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.944  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.946  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.947  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.948  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.949  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.952  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.953  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.954  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.955  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method enable was area-controller
+2018-08-31 17:14:32.956  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.956  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.957  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.957  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.957  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/info/{areaId}.xin.cymall.controller.AreaController.info.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.957  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/info/{areaId}.xin.cymall.controller.AreaController.info.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.958  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.959  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.960  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.961  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.965  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.966  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.968  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.968  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.970  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.971  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.972  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.973  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.975  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.975  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.977  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.978  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method info was area-controller
+2018-08-31 17:14:32.979  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String[](false)
+2018-08-31 17:14:32.980  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String[](false)
+2018-08-31 17:14:32.980  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String[](false)
+2018-08-31 17:14:32.980  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String[](false)
+2018-08-31 17:14:32.980  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.980  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.980  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.981  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:32.981  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/limit.xin.cymall.controller.AreaController.limit.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.981  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/limit.xin.cymall.controller.AreaController.limit.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:32.982  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.983  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.984  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.985  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.988  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.988  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.991  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.992  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.993  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.994  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.996  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.997  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.999  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:32.999  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:33.001  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:33.002  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method limit was area-controller
+2018-08-31 17:14:33.003  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-08-31 17:14:33.003  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-08-31 17:14:33.003  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-08-31 17:14:33.003  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-08-31 17:14:33.004  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/list.xin.cymall.controller.AreaController.list.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.004  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/list.xin.cymall.controller.AreaController.list.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.004  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.005  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.006  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.006  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.007  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.008  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.008  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.011  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.012  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.013  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.013  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.014  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.015  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.015  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.016  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.017  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method list was area-controller
+2018-08-31 17:14:33.018  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.018  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.018  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.018  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.019  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/listData.xin.cymall.controller.AreaController.listData.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.019  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/listData.xin.cymall.controller.AreaController.listData.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.021  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.022  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.024  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.024  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.026  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.027  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.029  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.030  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.031  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.032  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.036  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.037  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.038  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.039  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.040  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.041  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listData was area-controller
+2018-08-31 17:14:33.042  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.042  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.043  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.043  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.043  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/normalList/{parentAreaId}.xin.cymall.controller.AreaController.normalList.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.043  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/normalList/{parentAreaId}.xin.cymall.controller.AreaController.normalList.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.044  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.045  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.047  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.048  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.049  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.049  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.054  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.055  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.056  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.058  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.060  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.061  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.062  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.063  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.065  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.066  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method normalList was area-controller
+2018-08-31 17:14:33.068  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.068  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.068  INFO 9444 --- [           main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.068  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.077  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.077  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.078  INFO 9444 --- [           main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.078  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.079  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.079  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.080  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.080  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.080  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/save.xin.cymall.controller.AreaController.save.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.080  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/save.xin.cymall.controller.AreaController.save.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.082  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.083  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.084  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.085  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.086  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.087  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.088  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.089  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.091  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.091  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.093  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.094  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.097  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.098  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.101  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.103  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method save was area-controller
+2018-08-31 17:14:33.106  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.106  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.106  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.106  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.entity.Area(false)
+2018-08-31 17:14:33.107  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.107  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.107  INFO 9444 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.107  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key xin.cymall.common.utils.R(true)
+2018-08-31 17:14:33.107  INFO 9444 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /area/update.xin.cymall.controller.AreaController.update.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.107  INFO 9444 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /area/update.xin.cymall.controller.AreaController.update.DefaultGenericTypeNamingStrategy
+2018-08-31 17:14:33.113  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.114  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.116  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.117  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.118  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.123  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.124  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.125  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.126  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.127  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.128  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.130  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.131  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.133  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.135  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.135  INFO 9444 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was area-controller
+2018-08-31 17:14:33.158  INFO 9444 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-31 17:14:33.168 ERROR 9444 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.NullPointerException: null
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:108)
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:62)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.scanDocumentation(DocumentationPluginsBootstrapper.java:101)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:87)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:50)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2018-08-31 17:14:33.171  INFO 9444 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@18271936: startup date [Fri Aug 31 17:14:23 CST 2018]; root of context hierarchy
+2018-08-31 17:14:33.175  INFO 9444 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-08-31 17:14:33.177  INFO 9444 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-08-31 17:14:33.177  INFO 9444 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:dev:-1.errorChannel' has 0 subscriber(s).
+2018-08-31 17:14:33.177  INFO 9444 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2018-08-31 17:14:33.179  INFO 9444 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2018-08-31 17:14:33.192  INFO 9444 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-08-31 17:14:33.193 ERROR 9444 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@223d2c72] to prepare test instance [xin.cymall.CyPlusApplicationTests@2ad2b274]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:108)
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:62)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.scanDocumentation(DocumentationPluginsBootstrapper.java:101)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:87)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:50)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 26 common frames omitted
+
+]]></system-out>
+    <system-err><![CDATA[--------------shiroÒÑ¾­¼ÓÔØ----------------
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -9,8 +9,7 @@ import java.util.Date;
 /**
  * oss配置
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2017-12-13 10:07:04
  */
 public class SysOss implements Serializable {

@@ -21,7 +21,7 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 /**
- * Created by 陈熠
+ * Created by zzl
  * 2017/7/19.
  */
 @RestController
@@ -36,7 +36,6 @@ public class GetDataController {
 
     /**
      * @param
-     * @author chenyi
      * @Description 通过枚举获取数据列表
      * @date date 2017-7-20
      */
@@ -66,7 +65,6 @@ public class GetDataController {
 
     /**
      * @param
-     * @author chenyi
      * @Description 通过表码获取数据列表
      * @date date 2017-7-20
      */
@@ -82,7 +80,6 @@ public class GetDataController {
 
     /**
      * @param
-     * @author chenyi
      * @Description oss文件上传
      * @date date 2017-7-20
      */

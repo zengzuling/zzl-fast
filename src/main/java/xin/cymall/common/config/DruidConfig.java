@@ -14,9 +14,9 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 /**
- * @Author: chenyi
+ * @Author: zzl
  * @Description: druid配置类
- * @Date: 2018/1/1 19:09
+ * @Date: 2018/8/31 19:09
  */
 @Configuration
 public class DruidConfig {

@@ -9,8 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * IP地址
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2017年3月8日 下午12:57:02
  */
 public class IPUtils {

@@ -4,13 +4,12 @@ package xin.cymall.common.exception;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import xin.cymall.common.utils.R;
 
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author chenyi
+ * @author zzl
  * 统一异常处理
  * @date 2017/12/29
  */

@@ -7,12 +7,10 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.WordUtils;
-
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
 import xin.cymall.common.exception.MyException;
-import xin.cymall.common.utils.DateUtils;
 import xin.cymall.entity.Column;
 import xin.cymall.entity.Table;
 
@@ -26,8 +24,7 @@ import java.util.zip.ZipOutputStream;
 /**
  * 代码生成器   工具类
  *
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年12月19日 下午11:40:24
  */
 public class GenUtils {

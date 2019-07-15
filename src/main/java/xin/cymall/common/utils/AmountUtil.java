@@ -7,7 +7,7 @@ public class AmountUtil {
 	
     
     /**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 金额元转分
 	 * @param
 	 * @date 2017-5-17 下午4:31:40
@@ -27,7 +27,7 @@ public class AmountUtil {
     
     
 	/**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 金额分转元
 	 * @param
 	 * @date 2017-5-17 下午4:37:39
@@ -47,7 +47,7 @@ public class AmountUtil {
 
 	
 	/**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description  金额分转元，不保留小数
 	 * @param
 	 * @date 2017年7月18日 下午3:03:49 
@@ -61,7 +61,7 @@ public class AmountUtil {
 		return newAmount;
 	}
 	/**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 获取金额的百分比积分,
 	 * @param  amount 元单位
 	 * @param  percentage 百分比0.00-100.00
@@ -87,7 +87,7 @@ public class AmountUtil {
 		return giveInter;
 	}
     /**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 金额千分位格视化,
 	 * @param  amount 分单位
 	 * @date 2017-5-17 下午4:37:39
@@ -132,7 +132,7 @@ public class AmountUtil {
 	}
 
 	/**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 余额格视化
 	 * @param
 	 * @date 2017-5-17 下午4:37:39
@@ -160,7 +160,7 @@ public class AmountUtil {
 	}
 	
 	/**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 此方法单位分， 价格进位，例0.01 格式化后1 
 	 * @param
 	 * @date 2017年9月25日 下午8:50:02 

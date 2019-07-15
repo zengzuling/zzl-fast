@@ -17,8 +17,7 @@ import java.util.*;
 /**
  * 认证
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年11月10日 上午11:55:49
  */
 public class AuthRealm extends AuthorizingRealm {

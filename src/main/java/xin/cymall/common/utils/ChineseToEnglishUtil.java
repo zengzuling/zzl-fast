@@ -10,7 +10,7 @@ import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombi
 public class ChineseToEnglishUtil {
 
 	/**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 汉字转拼音
 	 * @param
 	 * @date 2017-2-25 上午9:34:17
@@ -43,7 +43,7 @@ public class ChineseToEnglishUtil {
 	}
 
 	/**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 汉字转成拼音并返回首字母
 	 * @param
 	 * @date 2017-2-25 上午9:34:38

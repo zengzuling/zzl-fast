@@ -1,7 +1,7 @@
 package xin.cymall.common.utils;
 
 /**
- * Created by 陈熠
+ * Created by zzl
  * 2017/7/5.
  * 用于返回前端下拉树、单选款、复选框数据格式
  */

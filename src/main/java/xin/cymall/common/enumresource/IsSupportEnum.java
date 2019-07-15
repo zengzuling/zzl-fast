@@ -4,7 +4,7 @@ package xin.cymall.common.enumresource;
 import xin.cymall.common.utils.EnumMessage;
 
 /**
- * Created by 陈熠
+ * Created by zzl
  * 2017/7/20.
  */
 public enum IsSupportEnum implements EnumMessage {

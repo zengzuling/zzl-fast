@@ -1,7 +1,7 @@
 package xin.cymall.common.enumresource;
 
 /**
- * Created by chenyi on 2016/12/7.
+ * Created by zzl on 2017/12/7.
  * 顶级菜单
  */
 public enum TopMenuEnum {

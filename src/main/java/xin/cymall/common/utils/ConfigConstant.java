@@ -2,8 +2,7 @@ package xin.cymall.common.utils;
 
 /**
  * 系统参数相关Key
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2017-03-26 10:33
  */
 public class ConfigConstant {

@@ -9,8 +9,7 @@ import xin.cymall.entity.SysUser;
 /**
  * Controller公共组件
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年11月9日 下午9:42:26
  */
 public abstract class AbstractController {

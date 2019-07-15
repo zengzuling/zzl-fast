@@ -6,7 +6,7 @@ import xin.cymall.common.utils.Underline2Camel;
 
 /**
  * SQL过滤
- * @author chenyi
+ * @author zzl
  * @date 2018-01-01 16:16
  */
 public class SQLFilter {

@@ -7,9 +7,8 @@ import java.util.Map;
 
 /**
  * 记录组织机构管理信息
- * 
- * @author chenyi
- * @email qq228112142@qq.com
+ *
+ * @author zzl
  * @date 2017-11-06 17:39:31
  */
 public interface OrganizeService {

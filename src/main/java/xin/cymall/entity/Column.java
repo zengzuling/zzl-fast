@@ -3,8 +3,7 @@ package xin.cymall.entity;
 /**
  * 列的属性
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年12月20日 上午12:01:45
  */
 public class Column {

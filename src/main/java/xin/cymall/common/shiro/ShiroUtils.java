@@ -8,8 +8,7 @@ import xin.cymall.entity.SysUser;
 /**
  * Shiro工具类
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年11月12日 上午9:49:19
  */
 public class ShiroUtils {

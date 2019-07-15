@@ -51,7 +51,7 @@ public class AreaServiceImpl implements AreaService {
 
 
 	/**
-	 * @author chenjiabin
+	 * @author zzl
 	 * @Description 根据分类ID中转成分类名称串
 	 * @param
 	 *
@@ -76,7 +76,7 @@ public class AreaServiceImpl implements AreaService {
 		return area_name_str;
 	}
 	/**
-	 * @author chenjiabin
+	 * @author zzl
 	 * @Description 根据菜单ID获取菜单名称
 	 * @param
 	 *

@@ -20,7 +20,7 @@ import xin.cymall.common.shiro.AuthRealm;
 import java.util.LinkedHashMap;
 
 /**
- * @author chenyi
+ * @author zzl
  * shiro的配置类
  * @date 2017/12/30
  *

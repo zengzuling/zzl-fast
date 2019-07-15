@@ -1,7 +1,7 @@
 package xin.cymall.common.utils;
 
 /**
- * Created by 陈熠
+ * Created by zzl
  * 2017/7/20.
  */
 public class EnumBean {

@@ -8,8 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * Spring Context 工具类
  * 
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2016年11月29日 下午11:45:51
  */
 @Component

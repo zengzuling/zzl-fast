@@ -1,20 +1,18 @@
 package xin.cymall.common.log;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import org.apache.ibatis.binding.MapperMethod;
-import org.apache.ibatis.binding.MapperMethod.MethodSignature;
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.*;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import xin.cymall.common.shiro.ShiroUtils;
-import xin.cymall.common.utils.IPUtils;
 import xin.cymall.common.utils.StringUtil;
 import xin.cymall.service.SysLogService;
 
@@ -25,7 +23,7 @@ import java.util.Arrays;
 import java.util.Date;
 
 /**
- * @author chenyi
+ * @author zzl
  * @date 2017/12/28
  */
 @Aspect

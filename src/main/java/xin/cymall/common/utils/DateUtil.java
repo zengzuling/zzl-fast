@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class DateUtil {
 
-	// 鏃堕棿鏍煎紡
+	//
 	private static SimpleDateFormat SDF_YMDHMS = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private static SimpleDateFormat SDF_Y_M_D = new SimpleDateFormat("yyyy-MM-dd");
 	private static SimpleDateFormat SDF_YMDHMS_FNAME = new SimpleDateFormat("yyyyMMddHHmmss");
@@ -43,10 +43,9 @@ public class DateUtil {
 	}
 
 	/**
-	 * @author chenyi
-	 * @Description: 鑾峰彇MMDD鏃堕棿鏍煎紡
+	 * @author zzl
 	 * @param tags
-	 * @date 2017-1-31 涓嬪崍1:14:19
+	 * @date 2017-1-31
 	 */
 	public static String getMd() {
 		return SDF_MD.format(new Date());
@@ -71,10 +70,9 @@ public class DateUtil {
 	}
 
 	/**
-	 * @author chenyi
-	 * @Description 鑾峰彇鍓嶅悗鍑犲垎閽熺殑鏃堕棿
+	 * @author zzl
 	 * @param
-	 * @date 2017-3-3 涓嬪崍2:11:14
+	 * @date 2017-3-3
 	 */
 	public static String getTimeByMinute(int minute) {
 		Calendar calendar = Calendar.getInstance();
@@ -84,10 +82,9 @@ public class DateUtil {
 	}
 
 	/**
-	 * @author chenyi
-	 * @Description 鑾峰彇鍓嶅悗鍑犲ぉ鐨勬棩鏈�
+	 * @author zzl
 	 * @param
-	 * @date 2017-3-3 涓嬪崍2:11:14
+	 * @date 2017-3-3
 	 */
 	public static String getDateByDay(int day) {
 		Calendar calendar = Calendar.getInstance();
@@ -97,10 +94,9 @@ public class DateUtil {
 	}
 
 	/**
-	 * @author chenyi
-	 * @Description 鏍规嵁浼犲叆鐨勬椂闂翠覆鏍煎紡鍖栨椂闂�
+	 * @author zzl
 	 * @param
-	 * @date 2017-3-20 涓嬪崍3:50:50
+	 * @date 2017-3-20
 	 */
 	public static String getYmdDate(Date date) {
 		return SDF_Y_M_D.format(date);
@@ -110,11 +106,9 @@ public class DateUtil {
 	}
 
 	/**
-	 * @author chenyi
-	 * @Description 姣旇緝涓や釜鏃ユ湡鐨勫ぇ灏�
+	 * @author zzl
 	 * @param
-	 * @return 0:琛ㄧず鐩哥瓑 -1:DATE2鍦―ATE1涔嬪墠 1:DATE2鍦―ATE1涔嬪悗
-	 * @date 2017-3-13 涓嬪崍4:25:47
+	 * @date 2017-3-13
 	 */
 	public static int compareDate(Date DATE1, Date DATE2) {
 		try {
@@ -134,10 +128,9 @@ public class DateUtil {
 	}
 
 	/**
-	 * @author chenyi
-	 * @Description 璺熷綋鍓嶆椂闂存瘮杈冨ぇ灏�
+	 * @author zzl
 	 * @param
-	 * @date 2017-3-13 涓嬪崍4:50:35
+	 * @date 2017-3-13
 	 */
 	public static int compareDate(Date DATE) {
 		return compareDate((new Date()), DATE);
@@ -228,7 +221,7 @@ public class DateUtil {
 	}
 
 	/**
-	 * @author chenyi
+	 * @author zzl
 	 * @Description 时间字符串，转时间戳
 	 * @param
 	 * @date 2017年8月5日 下午3:49:53
@@ -248,7 +241,7 @@ public class DateUtil {
 		return re_time;
 	}
 	/**
-	 * @author chenjiabin
+	 * @author zzl
 	 * @Description 修改时间格式 yyyy-MM-dd 23:59:59
 	 * @param
 	 * @date

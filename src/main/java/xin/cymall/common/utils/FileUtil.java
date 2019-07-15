@@ -1,13 +1,13 @@
 package xin.cymall.common.utils;
 
 /**
- *  @author chenyi
+ *  @author zzl
  * 2017/11/18.
  */
 public class FileUtil {
     /**
      * 判断文件是否为图片
-     * @author chenyi
+     * @author zzl
      * @param fileName 文件名
      * @return 检查后的结果
      * @throws Exception

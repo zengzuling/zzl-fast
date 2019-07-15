@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 /**
  * 系统日志注解
  *
- * @author chenyi
+ * @author zzl
  * @date 2017年3月8日 上午10:19:56
  */
 @Target(ElementType.METHOD)

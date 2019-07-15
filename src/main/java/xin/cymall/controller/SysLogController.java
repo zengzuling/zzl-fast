@@ -20,8 +20,7 @@ import java.util.Map;
 /**
  * 系统日志
  *
- * @author chenyi
- * @email 228112142@qq.com
+ * @author zzl
  * @date 2017-03-08 10:40:56
  */
 @Controller
@@ -53,7 +52,6 @@ public class SysLogController {
 
 
     /**
-     * @author chenyi
      * @Description 新增
      * @param
      * @date 2017/6/27 11:17
@@ -72,7 +70,6 @@ public class SysLogController {
         return R.ok();
     }
    /**
-    * @author chenyi
     * @Description 修改
     * @param
     * @date 2017/6/27 11:17
@@ -96,7 +93,6 @@ public class SysLogController {
         return "syslog/add.jsp";
     }
     /**
-     * @author chenyi
      * @Description  跳转到修改页面
      * @param
      * @date 2017/6/27 11:17
@@ -109,7 +105,6 @@ public class SysLogController {
         return "syslog/edit.jsp";
     }
     /**
-     * @author chenyi
      * @Description 删除
      * @param
      * @date 2017/6/27 11:37
