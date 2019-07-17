@@ -10,7 +10,6 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 import java.io.IOException;
 import java.security.SecureRandom;
-import java.util.UUID;
 
 public class DesUtil {
 
@@ -64,8 +63,7 @@ public class DesUtil {
 	 * @throws IOException
 	 * @throws Exception
 	 */
-	public static String decrypt(String data, String key) throws IOException,
-			Exception {
+	public static String decrypt(String data, String key) throws Exception {
 		if ((data == null || "".equals(data))
 				|| (key == null || "".equals(key)))
 			return null;
@@ -119,20 +117,12 @@ public class DesUtil {
 	}
 
 	public static byte[] convertHexString(String ss) {
-		byte digest[] = new byte[ss.length() / 2];
+		byte[] digest = new byte[ss.length() / 2];
 		for (int i = 0; i < digest.length; i++) {
 			String byteString = ss.substring(2 * i, 2 * i + 2);
 			int byteValue = Integer.parseInt(byteString, 16);
 			digest[i] = (byte) byteValue;
 		}
 		return digest;
-	}
-
-	public static void main(String[] args) throws Exception {
-		System.out.println(UUID.randomUUID().toString().replace("-", ""));
-		String d = cDercypt(
-				"45476BA16430A87992387C7EE5B17B1F63F3C144508A2590EC0083708F3EDB01AE07EF9A4048065F6D98DD4A71FC075E248F5303AC954103",
-				"3d70c1d9");
-		System.out.println(d);
 	}
 }

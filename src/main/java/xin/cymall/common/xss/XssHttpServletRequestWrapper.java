@@ -82,7 +82,7 @@ public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
     public String[] getParameterValues(String name) {
         String[] parameters = super.getParameterValues(name);
         if (parameters == null || parameters.length == 0) {
-            return null;
+            return new String[0];
         }
 
         for (int i = 0; i < parameters.length; i++) {

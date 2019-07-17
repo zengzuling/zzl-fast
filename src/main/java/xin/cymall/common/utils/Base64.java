@@ -80,7 +80,7 @@ public final class Base64 {
 		int numberTriplets = lengthDataBits / TWENTYFOURBITGROUP;
 		int numberQuartet = fewerThan24bits != 0 ? numberTriplets + 1
 				: numberTriplets;
-		char encodedData[] = null;
+		char[] encodedData = null;
 
 		encodedData = new char[numberQuartet * 4];
 
@@ -151,7 +151,7 @@ public final class Base64 {
 	public static byte[] decode(String encoded) {
 
 		if (encoded == null) {
-			return null;
+			return new byte[0];
 		}
 
 		char[] base64Data = encoded.toCharArray();
@@ -159,7 +159,7 @@ public final class Base64 {
 		int len = removeWhiteSpace(base64Data);
 
 		if (len % FOURBYTE != 0) {
-			return null;// should be divisible by four
+			return new byte[0];
 		}
 
 		int numberQuadruple = (len / FOURBYTE);
@@ -168,7 +168,7 @@ public final class Base64 {
 			return new byte[0];
 		}
 
-		byte decodedData[] = null;
+		byte[] decodedData = null;
 		byte b1 = 0, b2 = 0, b3 = 0, b4 = 0;
 		char d1 = 0, d2 = 0, d3 = 0, d4 = 0;
 
@@ -183,7 +183,7 @@ public final class Base64 {
 					|| !isData((d2 = base64Data[dataIndex++]))
 					|| !isData((d3 = base64Data[dataIndex++]))
 					|| !isData((d4 = base64Data[dataIndex++]))) {
-				return null;
+				return new byte[0];
 			}// if found "no data" just return null
 
 			b1 = base64Alphabet[d1];
@@ -198,7 +198,7 @@ public final class Base64 {
 
 		if (!isData((d1 = base64Data[dataIndex++]))
 				|| !isData((d2 = base64Data[dataIndex++]))) {
-			return null;// if found "no data" just return null
+			return new byte[0];
 		}
 
 		b1 = base64Alphabet[d1];
@@ -210,7 +210,7 @@ public final class Base64 {
 			if (isPad(d3) && isPad(d4)) {
 				if ((b2 & 0xf) != 0)// last 4 bits should be zero
 				{
-					return null;
+					return new byte[0];
 				}
 				byte[] tmp = new byte[i * 3 + 1];
 				System.arraycopy(decodedData, 0, tmp, 0, i * 3);
@@ -220,7 +220,7 @@ public final class Base64 {
 				b3 = base64Alphabet[d3];
 				if ((b3 & 0x3) != 0)// last 2 bits should be zero
 				{
-					return null;
+					return new byte[0];
 				}
 				byte[] tmp = new byte[i * 3 + 2];
 				System.arraycopy(decodedData, 0, tmp, 0, i * 3);
@@ -228,7 +228,7 @@ public final class Base64 {
 				tmp[encodedIndex] = (byte) (((b2 & 0xf) << 4) | ((b3 >> 2) & 0xf));
 				return tmp;
 			} else {
-				return null;
+				return new byte[0];
 			}
 		} else { // No PAD e.g 3cQl
 			b3 = base64Alphabet[d3];

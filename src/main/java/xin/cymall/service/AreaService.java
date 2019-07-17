@@ -34,5 +34,5 @@ public interface AreaService {
 
 	void updateState(String[] ids, String stateValue);
 
-	String getAreaNameStr(String area_id_str);
+	String getAreaNameStr(String areaIdStr);
 }

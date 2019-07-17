@@ -1,5 +1,7 @@
 package xin.cymall.common.utils;
 
+import org.apache.commons.collections.CollectionUtils;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
@@ -124,7 +126,7 @@ public class StringUtil {
 	 */
     public static String listToStr(List<String> sList){  
     	String str = "";
-    	if(sList!=null && sList.size()>0){
+    	if(CollectionUtils.isNotEmpty(sList)){
     		for(int i=0;i<sList.size();i++){
     			str+=sList.get(i)+",";
     		}
@@ -159,11 +161,4 @@ public class StringUtil {
         return true;
 	}
     
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		System.out.println(flushLeft(10,"aaafaa"));
-	}
-
 }

@@ -69,13 +69,13 @@ public final class HTMLFilter {
     private static final Pattern P_BOTH_ARROWS = Pattern.compile("<>");
 
     // @xxx could grow large... maybe use sesat's ReferenceMap
-    private static final ConcurrentMap<String,Pattern> P_REMOVE_PAIR_BLANKS = new ConcurrentHashMap<String, Pattern>();
-    private static final ConcurrentMap<String,Pattern> P_REMOVE_SELF_BLANKS = new ConcurrentHashMap<String, Pattern>();
+    private static final ConcurrentMap<String,Pattern> P_REMOVE_PAIR_BLANKS = new ConcurrentHashMap<>();
+    private static final ConcurrentMap<String,Pattern> P_REMOVE_SELF_BLANKS = new ConcurrentHashMap<>();
 
     /** set of allowed html elements, along with allowed attributes for each element **/
     private final Map<String, List<String>> vAllowed;
     /** counts of open tags for each (allowable) html element **/
-    private final Map<String, Integer> vTagCounts = new HashMap<String, Integer>();
+    private final Map<String, Integer> vTagCounts = new HashMap<>();
 
     /** html elements which must always be self-closing (e.g. "<img />") **/
     private final String[] vSelfClosingTags;
@@ -108,23 +108,23 @@ public final class HTMLFilter {
     public HTMLFilter() {
         vAllowed = new HashMap<>();
 
-        final ArrayList<String> a_atts = new ArrayList<String>();
-        a_atts.add("href");
-        a_atts.add("target");
-        vAllowed.put("a", a_atts);
+        final ArrayList<String> aAtts = new ArrayList<>();
+        aAtts.add("href");
+        aAtts.add("target");
+        vAllowed.put("a", aAtts);
 
-        final ArrayList<String> img_atts = new ArrayList<String>();
-        img_atts.add("src");
-        img_atts.add("width");
-        img_atts.add("height");
-        img_atts.add("alt");
-        vAllowed.put("img", img_atts);
+        final ArrayList<String> imgAtts = new ArrayList<>();
+        imgAtts.add("src");
+        imgAtts.add("width");
+        imgAtts.add("height");
+        imgAtts.add("alt");
+        vAllowed.put("img", imgAtts);
 
-        final ArrayList<String> no_atts = new ArrayList<String>();
-        vAllowed.put("b", no_atts);
-        vAllowed.put("strong", no_atts);
-        vAllowed.put("i", no_atts);
-        vAllowed.put("em", no_atts);
+        final ArrayList<String> noAtts = new ArrayList<>();
+        vAllowed.put("b", noAtts);
+        vAllowed.put("strong", noAtts);
+        vAllowed.put("i", noAtts);
+        vAllowed.put("em", noAtts);
 
         vSelfClosingTags = new String[]{"img"};
         vNeedClosingTags = new String[]{"a", "b", "strong", "i", "em"};
@@ -322,8 +322,8 @@ public final class HTMLFilter {
         return result;
     }
 
-    private static String regexReplace(final Pattern regex_pattern, final String replacement, final String s) {
-        Matcher m = regex_pattern.matcher(s);
+    private static String regexReplace(final Pattern regexPattern, final String replacement, final String s) {
+        Matcher m = regexPattern.matcher(s);
         return m.replaceAll(replacement);
     }
 
@@ -332,13 +332,9 @@ public final class HTMLFilter {
         Matcher m = P_END_TAG.matcher(s);
         if (m.find()) {
             final String name = m.group(1).toLowerCase();
-            if (allowed(name)) {
-                if (!inArray(name, vSelfClosingTags)) {
-                    if (vTagCounts.containsKey(name)) {
-                        vTagCounts.put(name, vTagCounts.get(name) - 1);
-                        return "</" + name + ">";
-                    }
-                }
+            if (allowed(name) && !inArray(name, vSelfClosingTags) && vTagCounts.containsKey(name)) {
+                vTagCounts.put(name, vTagCounts.get(name) - 1);
+                return "</" + name + ">";
             }
         }
 
@@ -349,14 +345,13 @@ public final class HTMLFilter {
             final String body = m.group(2);
             String ending = m.group(3);
 
-            //debug( "in a starting tag, name='" + name + "'; body='" + body + "'; ending='" + ending + "'" );
             if (allowed(name)) {
                 String params = "";
 
                 final Matcher m2 = P_QUOTED_ATTRIBUTES.matcher(body);
                 final Matcher m3 = P_UNQUOTED_ATTRIBUTES.matcher(body);
-                final List<String> paramNames = new ArrayList<String>();
-                final List<String> paramValues = new ArrayList<String>();
+                final List<String> paramNames = new ArrayList<>();
+                final List<String> paramValues = new ArrayList<>();
                 while (m2.find()) {
                     paramNames.add(m2.group(1)); //([a-z0-9]+)
                     paramValues.add(m2.group(3)); //(.*?)
@@ -370,11 +365,6 @@ public final class HTMLFilter {
                 for (int ii = 0; ii < paramNames.size(); ii++) {
                     paramName = paramNames.get(ii).toLowerCase();
                     paramValue = paramValues.get(ii);
-
-//          debug( "paramName='" + paramName + "'" );
-//          debug( "paramValue='" + paramValue + "'" );
-//          debug( "allowed? " + vAllowed.get( name ).contains( paramName ) );
-
                     if (allowedAttribute(name, paramName)) {
                         if (inArray(paramName, vProtocolAtts)) {
                             paramValue = processParamProtocol(paramValue);

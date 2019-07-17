@@ -1,5 +1,6 @@
 package xin.cymall.controller;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -93,7 +94,7 @@ public class CommparaController extends AbstractController{
 	public R save(@RequestBody Commpara commpara){
         //同一参数编码 下的 参数值不能相同
         List<Commpara> commparaList=commparaService.findByVerify(commpara);
-        if(commparaList!=null&&commparaList.size()>0){
+        if(CollectionUtils.isNotEmpty(commparaList)){
            throw  new MyException(commpara.getParaCode()+"下已存在该参数值");
         }
 
@@ -114,7 +115,7 @@ public class CommparaController extends AbstractController{
         if(!oldCommpara.getParaCode().equals(commpara.getParaCode())||!oldCommpara.getParaKey().equals(commpara.getParaKey())){
             //同一参数编码 下的 参数值不能相同
             List<Commpara> commparaList=commparaService.findByVerify(commpara);
-            if(commparaList!=null&&commparaList.size()>0){
+            if(CollectionUtils.isNotEmpty(commparaList)){
                 throw  new MyException(commpara.getParaCode()+"下已存在该参数值");
             }
         }

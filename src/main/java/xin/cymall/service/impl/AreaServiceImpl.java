@@ -57,23 +57,23 @@ public class AreaServiceImpl implements AreaService {
 	 *
 	 */
 	@Override
-	public  String getAreaNameStr(String area_id_str){
-		String area_name_str="";
-		if(StringUtil.isEmpty(area_id_str)){
-			return area_name_str;
+	public  String getAreaNameStr(String areaIdStr){
+		String areaNameStr="";
+		if(StringUtil.isEmpty(areaIdStr)){
+			return areaNameStr;
 		}
-		if(area_id_str.indexOf(",")>-1){
-			String[] menu_id = area_id_str.split(",");
-			for(int i=0;i<menu_id.length;i++){
-				area_name_str+=getAreaName(menu_id[i]);
-				if(i!=menu_id.length-1){
-					area_name_str+=",";
+		if(areaIdStr.indexOf(',')>-1){
+			String[] menuId = areaIdStr.split(",");
+			for(int i=0;i<menuId.length;i++){
+				areaNameStr+=getAreaName(menuId[i]);
+				if(i!=menuId.length-1){
+					areaNameStr+=",";
 				}
 			}
 		}else{
-			area_name_str+=getAreaName(area_id_str);
+			areaNameStr+=getAreaName(areaIdStr);
 		}
-		return area_name_str;
+		return areaNameStr;
 	}
 	/**
 	 * @author zzl
@@ -82,12 +82,8 @@ public class AreaServiceImpl implements AreaService {
 	 *
 	 */
 	public  String getAreaName(String areaId){
-		String areaName =  "";
 		Area area=queryObject(areaId);
-		if(area!=null){}
-		areaName=area.getAreaName();
-
-		return areaName;
+		return area.getAreaName();
 	}
 	@Override
 	public void deleteBatch(String[] areaIds){

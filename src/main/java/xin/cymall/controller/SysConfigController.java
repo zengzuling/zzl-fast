@@ -1,5 +1,6 @@
 package xin.cymall.controller;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -105,8 +106,7 @@ public class SysConfigController extends AbstractController{
 	@RequestMapping("/save")
 	@RequiresPermissions("sys:config:save")
 	public R save(@RequestBody SysConfig sysConfig){
-		List<SysConfig> sysConfigList=sysConfigService.findByCode(sysConfig.getCode());
-		if(sysConfigList!=null&&sysConfigList.size()>0){
+		if(CollectionUtils.isNotEmpty(sysConfigService.findByCode(sysConfig.getCode()))){
 			throw new MyException("参数名已存在");
 		}
 		sysConfigService.save(sysConfig);
@@ -125,7 +125,7 @@ public class SysConfigController extends AbstractController{
 		SysConfig oldConfig=sysConfigService.queryObject(sysConfig.getId());
 		if(!oldConfig.getCode().equals(sysConfig.getCode())){
 			List<SysConfig> sysConfigList=sysConfigService.findByCode(sysConfig.getCode());
-			if(sysConfigList!=null&&sysConfigList.size()>0){
+			if(CollectionUtils.isNotEmpty(sysConfigService.findByCode(sysConfig.getCode()))){
 				throw new MyException("参数名已存在");
 			}
 		}

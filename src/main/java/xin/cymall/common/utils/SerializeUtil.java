@@ -18,12 +18,11 @@ public class SerializeUtil {
             baos = new ByteArrayOutputStream();
             oos = new ObjectOutputStream(baos);
             oos.writeObject(object);
-            byte[] bytes = baos.toByteArray();
-            return bytes;
+            return baos.toByteArray();
         } catch (Exception e) {
 
         }
-        return null;
+        return new byte[0];
     }
 
     public static Object unserialize(byte[] bytes) {

@@ -8,15 +8,15 @@ import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import xin.cymall.common.shiro.ShiroUtils;
 import xin.cymall.common.utils.R;
 import xin.cymall.service.SysUserService;
 
 import javax.imageio.ImageIO;
-import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
@@ -35,7 +35,7 @@ public class SysLoginController {
 	@Autowired
 	private SysUserService userService;
 	@RequestMapping("captcha.jpg")
-	public void captcha(HttpServletResponse response)throws ServletException, IOException {
+	public void captcha(HttpServletResponse response)throws IOException {
         response.setHeader("Cache-Control", "no-store, no-cache");
         response.setContentType("image/jpeg");
 
@@ -54,8 +54,8 @@ public class SysLoginController {
 	 * 登录
 	 */
 	@ResponseBody
-	@RequestMapping(value = "/sys/login", method = RequestMethod.POST)
-	public R login(String username, String password, String captcha)throws IOException {
+	@PostMapping(value = "/sys/login")
+	public R login(String username, String password, String captcha){
 		String kaptcha = ShiroUtils.getKaptcha(Constants.KAPTCHA_SESSION_KEY);
 		if(!captcha.equalsIgnoreCase(kaptcha)){
 			return R.error("验证码不正确");
@@ -83,7 +83,7 @@ public class SysLoginController {
 	/**
 	 * 退出
 	 */
-	@RequestMapping(value = "logout", method = RequestMethod.GET)
+	@GetMapping(value = "logout")
 	public String logout() {
 		ShiroUtils.logout();
 		return "redirect:login.html";

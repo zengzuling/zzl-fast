@@ -3,6 +3,7 @@ package xin.cymall.common.utils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
+import java.util.UUID;
 
 /**
  * @function 功能  生成随机标识
@@ -11,14 +12,7 @@ import java.util.Random;
  */
 public class RandomCharUtil {
 	
-    
-    public static void main(String[] args){
-    	System.out.println(generateUUID());
-    	/*for(int i=0;i<100;i++){
-    		System.out.println(getSixNumRand());
-    	}*/
-    }
-    
+
     /**
 	 * @author zzl
 	 * @Description  生成UUID
@@ -26,7 +20,7 @@ public class RandomCharUtil {
 	 * @date 2016-12-31 下午4:37:16
 	 */
     public static String generateUUID(){
-    	UUID uuid = UUID.randomUUID();
+    	UUID uuid = java.util.UUID.randomUUID();
     	return uuid.toString().replace("-", "");
     }
     

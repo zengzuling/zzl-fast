@@ -2,6 +2,7 @@ package xin.cymall.controller;
 
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.ObjectMetadata;
+import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,7 +17,9 @@ import xin.cymall.service.FileService;
 import xin.cymall.service.SysOssService;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
 
@@ -41,7 +44,7 @@ public class GetDataController {
      */
     @ResponseBody
     @RequestMapping("/getEnum")
-    public R getEnum(@RequestParam Map<String, Object> params) throws Exception {
+    public R getEnum(@RequestParam Map<String, Object> params) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         List<EnumBean> values = new ArrayList<>();
         String enumName = (String) params.get("enumName");
         if (enumName != null && !"".equals(enumName)) {
@@ -49,7 +52,7 @@ public class GetDataController {
             try {
                 clzz = Class.forName(Constant.PACKAGE_NAME + "." + enumName);
                 Method method = clzz.getMethod("values");
-                EnumMessage inter[] = (EnumMessage[]) method.invoke(new Object[]{}, new Object[]{});
+                EnumMessage[] inter = (EnumMessage[]) method.invoke(new Object[]{}, new Object[]{});
                 for (EnumMessage enumMessage : inter) {
                     EnumBean e = new EnumBean();
                     e.setCode(enumMessage.getCode());
@@ -88,7 +91,7 @@ public class GetDataController {
         Map<String, Object> params = new HashMap<>();
         params.put("state", StateEnum.ENABLE.getCode());
         List<SysOss> ossList = ossService.getList(params);
-        if (ossList != null && ossList.size() > 0) {
+        if (CollectionUtils.isNotEmpty(ossList)) {
             SysOss oss = ossList.get(0);
             String fileNameBak = fileName;
             String resultImgUrl = oss.getUrl();
@@ -107,9 +110,9 @@ public class GetDataController {
             try {
                 //获取上传的图片文件名
                 Long nanoTime = System.nanoTime();// 防止文件被覆盖，以纳秒生成图片名
-                String _extName = fileName.substring(fileName.indexOf("."));//获取扩展名
-                fileName = nanoTime + _extName;
-                fileName = DateUtil.getYmd() + "/" + fileName + "/" + fileNameBak;
+                String extName = fileName.substring(fileName.indexOf('.'));//获取扩展名
+                fileName = nanoTime + extName;
+                fileName = DateUtil.getYmd() + '/' + fileName + '/' + fileNameBak;
                 ossClient.putObject(bucket, fileName, inputStream, objectMeta);
                 resultImgUrl += fileName;
             } catch (Exception e) {
@@ -130,19 +133,18 @@ public class GetDataController {
      */
     @ResponseBody
     @RequestMapping("/upload")
-    public R upload(@RequestParam("file") MultipartFile file) throws Exception {
+    public R upload(@RequestParam("file") MultipartFile file) throws IOException {
         if (file.isEmpty()) {
             throw new MyException("上传文件不能为空");
         }
         String fileName = file.getOriginalFilename();
-        String _extName = fileName.substring(fileName.indexOf("."), fileName.length());//获取扩展名
+//        String extName = fileName.substring(fileName.indexOf("."), fileName.length());//获取扩展名
 
         if (file.getSize() > 1 * 1024 * 1024) {
             throw new MyException("图片不能大于1M");
         }
         //上传文件
         String url = uploadImage(file.getOriginalFilename(), file.getInputStream());
-        //String url = "/statics/img/timg.jpg";
         return R.ok().put("url", url);
     }
 
@@ -157,7 +159,7 @@ public class GetDataController {
             throw new MyException("上传文件不能为空");
         }
         String fileName = file[0].getOriginalFilename();
-        String _extName = fileName.substring(fileName.indexOf("."), fileName.length());//获取扩展名
+        String extName = fileName.substring(fileName.indexOf('.'), fileName.length());//获取扩展名
         Long size = file[0].getSize();
 //        if (size > 1 * 1024 * 1024) {
 //            throw new MyException("图片不能大于1M");
@@ -179,7 +181,7 @@ public class GetDataController {
         if (isPicture) {
             uploadFile.setFileType("image");
         } else {
-            uploadFile.setFileType(_extName);
+            uploadFile.setFileType(extName);
         }
         fileService.save(uploadFile);
 
@@ -202,7 +204,7 @@ public class GetDataController {
      */
     @ResponseBody
     @RequestMapping("/deleteFile/{fileId}")
-    public R uploadFile(@PathVariable("fileId") String fileId) throws Exception {
+    public R uploadFile(@PathVariable("fileId") String fileId){
         fileService.delete(fileId);
         return R.ok();
     }
@@ -212,7 +214,7 @@ public class GetDataController {
      */
     @ResponseBody
     @RequestMapping("/deleteByRelationId/{relationId}")
-    public R deleteByRelationId(@PathVariable("relationId") String relationId) throws Exception {
+    public R deleteByRelationId(@PathVariable("relationId") String relationId){
         fileService.deleteByRelationId(relationId);
         return R.ok();
     }

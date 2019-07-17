@@ -56,7 +56,6 @@ public class FileServiceImpl implements FileService {
     public void updateState(String[] ids,String stateValue) {
         for (String id:ids){
 			File file=get(id);
-			//file.setState(stateValue);
             update(file);
         }
     }

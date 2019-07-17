@@ -57,8 +57,7 @@ public class AmountUtil {
 		BigDecimal bigAmount = new BigDecimal(amount);
 		BigDecimal divisor = new BigDecimal(100);
 		DecimalFormat df =new DecimalFormat("#0");
-		String newAmount  = df.format(bigAmount.divide(divisor));
-		return newAmount;
+		return df.format(bigAmount.divide(divisor));
 	}
 	/**
 	 * @author zzl
@@ -83,8 +82,7 @@ public class AmountUtil {
 		//乘法
 		BigDecimal bigDecimalMultiply = totalInterValue.multiply(percentageValue);
 		int multiply = bigDecimalMultiply.intValue();
-		int giveInter=multiply/100;
-		return giveInter;
+		return multiply/100;
 	}
     /**
 	 * @author zzl
@@ -175,16 +173,4 @@ public class AmountUtil {
 			return String.valueOf(carryAmount);
 		}
 	}
-	
-	public static void main(String[] args){
-		
-		System.out.println(formatMoney("16700"));
-		//System.out.println(amountToBranch("2000012"));
-		//System.out.println(amountToPrimary("2000012"));
-		//System.out.println(formatMoney("123103300.512"));
-		//System.out.println(DecimalFormat.getNumberInstance().format(1245600000));
-		//System.out.println(DecimalFormat.getNumberInstance().format(Integer.parseInt(formatMoney("1231000.512"))));
-	}
-    
-    
 }

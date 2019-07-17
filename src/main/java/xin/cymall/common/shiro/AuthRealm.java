@@ -48,7 +48,7 @@ public class AuthRealm extends AuthorizingRealm {
 		}
 
 		//用户权限列表
-		Set<String> permsSet = new HashSet<String>();
+		Set<String> permsSet = new HashSet<>();
 		for(String perms : permsList){
 			if(StringUtils.isBlank(perms)){
 				continue;
@@ -66,7 +66,7 @@ public class AuthRealm extends AuthorizingRealm {
 	 */
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(
-			AuthenticationToken token) throws AuthenticationException {
+			AuthenticationToken token){
 
 		String username = (String) token.getPrincipal();
         String password = new String((char[]) token.getCredentials());
@@ -88,8 +88,7 @@ public class AuthRealm extends AuthorizingRealm {
         if(user.getStatus() == 0){
         	throw new LockedAccountException("账号已被锁定,请联系管理员");
         }
-        SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(user, password, getName());
-        return info;
+        return new SimpleAuthenticationInfo(user, password, getName());
 	}
 
 }

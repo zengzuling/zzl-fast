@@ -40,7 +40,7 @@ public class WebLogAspect {
     public void webLog(){}
 
     @Before("webLog()")
-    public void doBefore(JoinPoint joinPoint) throws Throwable {
+    public void doBefore(JoinPoint joinPoint) throws ClassNotFoundException {
         // 接收到请求，记录请求内容
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
@@ -56,7 +56,6 @@ public class WebLogAspect {
         logger.info("SysLog : " + value);
 
         if(!StringUtil.isEmpty(value)){
-            // TODO: 2017/12/28  插入数据库......
             xin.cymall.entity.SysLog sysLog=new xin.cymall.entity.SysLog();
             sysLog.setCreateDate(new Date());
             sysLog.setIp(request.getRemoteAddr());
@@ -73,7 +72,7 @@ public class WebLogAspect {
     }
 
     @AfterReturning(returning = "ret", pointcut = "webLog()")
-    public void doAfterReturning(Object ret) throws Throwable {
+    public void doAfterReturning(Object ret){
         // 处理完请求，返回内容
         logger.info("RESPONSE : " + ret);
 
@@ -86,7 +85,7 @@ public class WebLogAspect {
      * @return 方法描述
      * @throws Exception
      */
-    public  static String getControllerMethodDescription(JoinPoint joinPoint)  throws Exception {
+    public  static String getControllerMethodDescription(JoinPoint joinPoint) throws ClassNotFoundException {
         String targetName = joinPoint.getTarget().getClass().getName();
         String methodName = joinPoint.getSignature().getName();
         Object[] arguments = joinPoint.getArgs();

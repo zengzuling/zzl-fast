@@ -5,6 +5,7 @@ import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 import xin.cymall.common.enumresource.StateEnum;
 import xin.cymall.common.exception.MyException;
@@ -61,11 +62,11 @@ public class AreaController {
     @RequestMapping("normalList/{parentAreaId}")
     public R normalList(@PathVariable String parentAreaId) {
         List<EnumBean> list = new ArrayList<>();
-        HashMap<String, Object> paraMap = new HashMap<String, Object>();
+        HashMap<String, Object> paraMap = new HashMap<>();
         paraMap.put("state", StateEnum.ENABLE.getCode());
         paraMap.put("parentAreaId", parentAreaId);
         List<Area> areaList = areaService.getAreaListByIsShow(paraMap);
-        if (areaList != null && areaList.size() > 0) {
+        if (!CollectionUtils.isEmpty(areaList)) {
             for (int i = 0; i < areaList.size(); i++) {
                 EnumBean bean = new EnumBean();
                 bean.setCode(areaList.get(i).getAreaId());
@@ -117,9 +118,9 @@ public class AreaController {
     public R save(@RequestBody Area area) {
         verifyForm(area);
         //随机生成十位字符做为菜单标识
-        String area_id = RandomCharUtil.getNumberRand();
+        String areaId = RandomCharUtil.getNumberRand();
         //算出子菜单的等级
-        area.setAreaId(area_id);
+        area.setAreaId(areaId);
         //设置拼音
         String pinyin= ChineseToEnglishUtil.getPingYin(area.getAreaName().trim()).trim();
         area.setEnName(pinyin);
@@ -137,14 +138,14 @@ public class AreaController {
         area.setParentAreaId(parentId.substring(parentId.length()-10,parentId.length()));
         //设置行政级别（上级行政级别+1）
         Area parent=areaService.queryObject(parentId.substring(parentId.length()-10,parentId.length()));
-        int parent_level=parent.getAreaLevel();
-        if (parent_level==-1){
-            parent_level=0;
+        int parentLevel=parent.getAreaLevel();
+        if (parentLevel==-1){
+            parentLevel=0;
         }
-        if (parent_level<4){
-            parent_level=parent_level+1;
+        if (parentLevel<4){
+            parentLevel=parentLevel+1;
         }
-        area.setAreaLevel(parent_level);
+        area.setAreaLevel(parentLevel);
         area.setState(area.getState());
         areaService.save(area);
 

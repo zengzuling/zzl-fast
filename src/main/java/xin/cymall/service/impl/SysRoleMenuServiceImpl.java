@@ -1,5 +1,6 @@
 package xin.cymall.service.impl;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,7 +26,7 @@ public class SysRoleMenuServiceImpl implements SysRoleMenuService {
 	@Override
 	@Transactional
 	public void saveOrUpdate(Long roleId, List<Long> menuIdList) {
-		if(menuIdList==null||menuIdList.size() == 0){
+		if(CollectionUtils.isEmpty(menuIdList)){
 			return ;
 		}
 		//先删除角色与菜单关系

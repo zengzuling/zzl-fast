@@ -115,7 +115,7 @@ public class SysMenuServiceImpl implements SysMenuService {
 	 * 递归
 	 */
 	private List<SysMenu> getMenuTreeList(List<SysMenu> menuList, List<Long> menuIdList){
-		List<SysMenu> subMenuList = new ArrayList<SysMenu>();
+		List<SysMenu> subMenuList = new ArrayList<>();
 		
 		for(SysMenu entity : menuList){
 			if(entity.getType() == Constant.MenuType.CATALOG.getValue()){//目录

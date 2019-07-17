@@ -30,7 +30,7 @@ import java.util.zip.ZipOutputStream;
 public class GenUtils {
 
 	public static List<String> getTemplates(){
-		List<String> templates = new ArrayList<String>();
+		List<String> templates = new ArrayList<>();
 		templates.add("generator/template/Entity.java.vm");
 		templates.add("generator/template/Dao.java.vm");
 		templates.add("generator/template/Mapper.xml.vm");
@@ -71,8 +71,8 @@ public class GenUtils {
 			columnEntity.setColumnName(column.get("columnName"));
 			columnEntity.setDataType(column.get("dataType"));
 			//设置字段长度
-			int start=column.get("maxLength").indexOf("(");
-			int end =column.get("maxLength").indexOf(")");
+			int start=column.get("maxLength").indexOf('(');
+			int end =column.get("maxLength").indexOf(')');
 			if(start!=-1){
 				columnEntity.setMaxLength(column.get("maxLength").substring(start+1,end));
 			}else{

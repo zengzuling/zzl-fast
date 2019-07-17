@@ -23,7 +23,7 @@ public class Md5Utils {
 	 * @return 签名的字符串
 	 */
 	public static StringBuilder CreateLinkString(Map<String, String> params) {
-		List<String> keys = new ArrayList<String>(params.keySet());
+		List<String> keys = new ArrayList<>(params.keySet());
 		Collections.sort(keys);
 		StringBuilder prestr = new StringBuilder();
 		String key = "";
@@ -50,7 +50,7 @@ public class Md5Utils {
 	 *            密钥
 	 * @return 签名结果
 	 */
-	public static String BuildMysign(Map<String, String> sArray, String key) {
+	public static String buildMysign(Map<String, String> sArray, String key) {
 		if (sArray != null && sArray.size() > 0) {
 			StringBuilder prestr = CreateLinkString(sArray);
 			System.out.println("********************代签名字符串为："
@@ -87,10 +87,7 @@ public class Md5Utils {
 		}
 
 		byte[] bytes = msgDigest.digest();
-
-		String md5Str = new String(encodeHex(bytes));
-
-		return md5Str;
+		return new String(encodeHex(bytes));
 	}
 
 	public static char[] encodeHex(byte[] data) {

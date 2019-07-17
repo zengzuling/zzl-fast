@@ -1,5 +1,6 @@
 package xin.cymall.service.impl;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import xin.cymall.dao.SysUserRoleDao;
@@ -23,7 +24,7 @@ public class SysUserRoleServiceImpl implements SysUserRoleService {
 
 	@Override
 	public void saveOrUpdate(Long userId, List<Long> roleIdList) {
-		if(roleIdList==null||roleIdList.size() == 0){
+		if(CollectionUtils.isEmpty(roleIdList)){
 			return ;
 		}
 		//先删除用户与角色关系

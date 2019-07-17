@@ -1,5 +1,6 @@
 package xin.cymall.controller;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -49,7 +50,7 @@ public class OrganizeController {
 
 		List<Organize> organizeList = organizeService.queryList(query);
 		int total = organizeService.queryTotal(query);
-        if (organizeList!=null&&organizeList.size()>0){
+        if (CollectionUtils.isNotEmpty(organizeList)){
             for (int i = 0; i < organizeList.size(); i++) {
                 if (TopMenuEnum.TopMenu.getCode().equals(organizeList.get(i).getParentOrgId())){
                     organizeList.get(i).setParentOrgName(TopMenuEnum.TopMenu.getDesc());

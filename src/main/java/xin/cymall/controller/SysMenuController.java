@@ -261,7 +261,6 @@ public class SysMenuController extends AbstractController {
     public R user() {
         List<SysMenu> menuList = sysMenuService.getUserMenuList(getUserId());
         //去除开发工具
-//        menuList.remove(0);
         return R.ok().put("menuList", menuList);
     }
 

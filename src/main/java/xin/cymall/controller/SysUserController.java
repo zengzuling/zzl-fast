@@ -181,8 +181,7 @@ public class SysUserController extends AbstractController {
 		verifyForm(user);
 		user.setCreateUserId(getUserId());
 		sysUserService.update(user);
-		//todo kj
-		
+
 		return R.ok();
 	}
 	

@@ -2,7 +2,6 @@ package xin.cymall.dao;
 
 import xin.cymall.entity.Area;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +13,7 @@ import java.util.Map;
  */
 public interface AreaDao extends BaseDao<Area> {
 
-    List<Area> getAreaListByIsShow(HashMap<String, Object> paraMap);
+    List<Area> getAreaListByIsShow(Map<String, Object> paraMap);
 
     int getCount(Map<String, Object> params);
 

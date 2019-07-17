@@ -110,13 +110,11 @@ public class DateUtil {
 	 * @param
 	 * @date 2017-3-13
 	 */
-	public static int compareDate(Date DATE1, Date DATE2) {
+	public static int compareDate(Date Date, Date DateTwo) {
 		try {
-//			Date dt1 = SDF_Y_M_D.parse(DATE1);
-//			Date dt2 = SDF_Y_M_D.parse(DATE2);
-			if (DATE1.getTime() > DATE2.getTime()) {
+			if (Date.getTime() > DateTwo.getTime()) {
 				return 1;
-			} else if (DATE1.getTime() < DATE2.getTime()) {
+			} else if (Date.getTime() < DateTwo.getTime()) {
 				return -1;
 			} else {
 				return 0;
@@ -132,8 +130,8 @@ public class DateUtil {
 	 * @param
 	 * @date 2017-3-13
 	 */
-	public static int compareDate(Date DATE) {
-		return compareDate((new Date()), DATE);
+	public static int compareDate(Date Date) {
+		return compareDate((new Date()), Date);
 	}
 
 	/**
@@ -148,7 +146,7 @@ public class DateUtil {
 	 * @return 1(timeone>timetow) -1(timeone<timetow) 2(timeone=timetow) 0错误
 	 *         3(timeone>=timetow) -3(timeone<=timetow)
 	 */
-	public static int compare_dateTime(String timeone, String timetow, int type) {
+	public static int compareDateTime(String timeone, String timetow, int type) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		try {
 			Date dateone = sdf.parse(timeone);
@@ -190,7 +188,7 @@ public class DateUtil {
 	 * @return 1(timeone>timetow) -1(timeone<timetow) 2(timeone=timetow) 0错误
 	 *         3(timeone>=timetow) -3(timeone<=timetow)
 	 */
-	public static int compare_date(String timeone, String timetow, int type) {
+	public static int compareDate(String timeone, String timetow, int type) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		try {
 			Date dateone = sdf.parse(timeone);
@@ -227,18 +225,18 @@ public class DateUtil {
 	 * @date 2017年8月5日 下午3:49:53
 	 */
 	public static String getTime(String dateStr) {
-		String re_time = null;
+		String reTime = null;
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		Date d;
 		try {
 			d = sdf.parse(dateStr);
 			long l = d.getTime();
 			String str = String.valueOf(l);
-			re_time = str.substring(0, 10);
+			reTime = str.substring(0, 10);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		return re_time;
+		return reTime;
 	}
 	/**
 	 * @author zzl
@@ -256,15 +254,6 @@ public class DateUtil {
 			e.printStackTrace();
 		}
 		return date2;
-	}
-
-
-	public static void main(String[] args) {
-		// System.out.println(getYmdhms());
-		// System.out.println(getDateByDay(5));
-		// System.out.println(compareDate("2017-03-15"));
-		// System.out.println(getYmd("2017-03-06 14:59:57"));
-		System.out.println( changeDate(new Date()));
 	}
 
 }
