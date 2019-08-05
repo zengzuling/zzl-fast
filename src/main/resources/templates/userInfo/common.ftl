@@ -1,13 +1,5 @@
 <#--  用户个人信息公用页面-->
 <#--  zzl 2019-07-18 10:49:13-->
-            <div class="layui-form-item">${(model.bucket)!""}
-            <label class="layui-form-label">用户id<span class="span_must">*</span></label>
-            <div class="layui-input-normal">
-                <input type="text"  name="userInfoId" maxlength="20" lay-verify="required"
-                 value="${(model.userInfoId)!""}"  placeholder="请输入用户id"  class="layui-input">
-            </div>
-        </div>
-
               <div class="layui-form-item">${(model.bucket)!""}
             <label class="layui-form-label">用户名<span class="span_must">*</span></label>
             <div class="layui-input-normal">
@@ -45,22 +37,6 @@
             <div class="layui-input-normal">
                 <input type="text"  name="address" maxlength="100" lay-verify="required"
                  value="${(model.address)!""}"  placeholder="请输入地址"  class="layui-input">
-            </div>
-        </div>
-
-              <div class="layui-form-item">${(model.bucket)!""}
-            <label class="layui-form-label">创建者ID<span class="span_must">*</span></label>
-            <div class="layui-input-normal">
-                <input type="text"  name="createUserId" maxlength="20" lay-verify="required"
-                 value="${(model.createUserId)!""}"  placeholder="请输入创建者ID"  class="layui-input">
-            </div>
-        </div>
-
-              <div class="layui-form-item">${(model.bucket)!""}
-            <label class="layui-form-label">创建时间<span class="span_must">*</span></label>
-            <div class="layui-input-normal">
-                <input type="text"  name="createTime" maxlength="20" lay-verify="required"
-                 value="${(model.createTime)!""}"  placeholder="请输入创建时间"  class="layui-input">
             </div>
         </div>
 

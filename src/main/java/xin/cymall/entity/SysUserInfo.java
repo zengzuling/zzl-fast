@@ -1,9 +1,9 @@
 package xin.cymall.entity;
 
 import lombok.Data;
+import xin.cymall.base.BaseEntity;
 
 import java.io.Serializable;
-import java.util.Date;
 
 
 
@@ -15,7 +15,7 @@ import java.util.Date;
  * @date 2019-07-18 10:49:13
  */
 @Data
-public class SysUserInfo implements Serializable {
+public class SysUserInfo extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	/**用户id**/
@@ -30,14 +30,6 @@ public class SysUserInfo implements Serializable {
 	private String mobile;
 	/**地址**/
 	private String address;
-	/**状态  0：禁用   1：正常**/
-	private String status;
-	/**创建者ID**/
-	private String createUserId;
-	/**创建时间**/
-	private Date createTime;
-	/**角色id**/
-	private String roleId;
 	/**部门id**/
 	private String orgId;
 }

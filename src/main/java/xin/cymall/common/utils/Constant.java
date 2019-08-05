@@ -11,6 +11,8 @@ public class Constant {
     public final static String PACKAGE_NAME = "xin.cymall.common.enumresource";
 	/** 超级管理员ID */
 	public static final int SUPER_ADMIN = 1;
+	/**默认角色*/
+	public static final Long DEFAULT_ADMIN = 6L;
 
 	/**
 	 * 菜单类型

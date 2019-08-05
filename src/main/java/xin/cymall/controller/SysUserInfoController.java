@@ -26,7 +26,7 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("sysuserinfo")
-public class SysUserInfoController {
+public class SysUserInfoController extends AbstractController {
 	@Autowired
 	private SysUserInfoService sysUserInfoService;
 	

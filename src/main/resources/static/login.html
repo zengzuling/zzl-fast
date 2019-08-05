@@ -14,11 +14,10 @@
 </head>
 <body>
 <!--<video class="video-player" preload="auto" autoplay="autoplay" loop="loop" data-height="1080" data-width="1920" height="1080" width="1920">-->
-    <!--<source src="/login/lol.mp4" type="video/mp4">-->
+<!--    <source src="/login/lol.mp4" type="video/mp4">-->
 <!--</video>-->
 
-<div class="video_mask"></div>
-<div class="login">
+<div class="login" style="background-color:cornflowerblue;">
     <h1>管理员登录</h1>
     <form class="layui-form">
         <div class="layui-form-item">
@@ -31,7 +30,7 @@
             <input class="layui-input" style="width: 140px;" name="captcha" placeholder="验证码" lay-verify="required" type="text" autocomplete="off">
             <div class="code"><img id="captcha" src="/captcha.jpg" width="116" height="36" onclick="refreshCode(this)"></div>
         </div>
-        <button class="layui-btn login_btn" lay-submit="" lay-filter="login">登录</button>
+        <button class="layui-btn login_btn" style="background-color:white;color: black"  lay-submit="" lay-filter="login">登录</button>
     </form>
 </div>
 <script type="text/javascript" src="/statics/plugins/layui/layui.js"></script>
