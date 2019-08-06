@@ -6,6 +6,7 @@ import xin.cymall.common.utils.EnumMessage;
 /**
  * Created by zzl
  * 2017/7/20.
+ * 性别枚举
  */
 public enum SexEnum implements EnumMessage {
     MEN("1","男"),

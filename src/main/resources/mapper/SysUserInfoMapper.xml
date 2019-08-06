@@ -8,6 +8,7 @@
         <result property="userInfoId" column="user_info_id"/>
         <result property="username" column="username"/>
         <result property="password" column="password"/>
+        <result property="sex" column="sex"/>
         <result property="email" column="email"/>
         <result property="mobile" column="mobile"/>
         <result property="address" column="address"/>
@@ -54,6 +55,8 @@
     		<if test="passwordVague != null and passwordVague != ''"> and t.password like concat('%',#{passwordVague},'%') </if>
             <if test="email != null and email != ''"> and t.email = #{email} </if>
     		<if test="emailVague != null and emailVague != ''"> and t.email like concat('%',#{emailVague},'%') </if>
+            <if test="sex != null and sex != ''"> and t.sex = #{sex} </if>
+            <if test="sexVague != null and sexVague != ''"> and t.sex like concat('%',#{sexVague},'%') </if>
             <if test="mobile != null and mobile != ''"> and t.mobile = #{mobile} </if>
     		<if test="mobileVague != null and mobileVague != ''"> and t.mobile like concat('%',#{mobileVague},'%') </if>
             <if test="address != null and address != ''"> and t.address = #{address} </if>
@@ -78,7 +81,8 @@
 		(
 			`user_info_id`, 
 			`username`, 
-			`password`, 
+			`password`,
+			`sex`,
 			`email`, 
 			`mobile`, 
 			`address`, 
@@ -93,7 +97,8 @@
 		(
 			#{userInfoId}, 
 			#{username}, 
-			#{password}, 
+			#{password},
+			#{sex},
 			#{email}, 
 			#{mobile}, 
 			#{address}, 
@@ -111,6 +116,7 @@
 		<set>
 			<if test="username != null">`username` = #{username}, </if>
 			<if test="password != null">`password` = #{password}, </if>
+            <if test="sex != null">`sex` = #{sex}, </if>
 			<if test="email != null">`email` = #{email}, </if>
 			<if test="mobile != null">`mobile` = #{mobile}, </if>
 			<if test="address != null">`address` = #{address}, </if>

@@ -22,6 +22,8 @@ public class SysUserInfo extends BaseEntity implements Serializable {
 	private String userInfoId;
 	/**用户名**/
 	private String username;
+	/**性别**/
+	private String sex;
 	/**密码**/
 	private String password;
 	/**邮箱**/
