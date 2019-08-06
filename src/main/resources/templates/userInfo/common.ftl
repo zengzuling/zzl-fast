@@ -11,15 +11,14 @@
               <div class="layui-form-item">${(model.bucket)!""}
             <label class="layui-form-label">密码<span class="span_must">*</span></label>
             <div class="layui-input-normal">
-                <input type="text"  name="password" maxlength="100" lay-verify="required"
+                <input type="password"  name="password" maxlength="100" lay-verify="required"
                  value="${(model.password)!""}"  placeholder="请输入密码"  class="layui-input">
             </div>
         </div>
-
-              <div class="layui-form-item">${(model.bucket)!""}
+    <div class="layui-form-item">${(model.bucket)!""}
             <label class="layui-form-label">邮箱<span class="span_must">*</span></label>
             <div class="layui-input-normal">
-                <input type="text"  name="email" maxlength="100" lay-verify="required"
+                <input type="text"  name="email" maxlength="100" lay-verify="email"
                  value="${(model.email)!""}"  placeholder="请输入邮箱"  class="layui-input">
             </div>
         </div>
@@ -27,7 +26,7 @@
               <div class="layui-form-item">${(model.bucket)!""}
             <label class="layui-form-label">手机号<span class="span_must">*</span></label>
             <div class="layui-input-normal">
-                <input type="text"  name="mobile" maxlength="100" lay-verify="required"
+                <input type="tel"  name="mobile" maxlength="11" lay-verify="required|phone"
                  value="${(model.mobile)!""}"  placeholder="请输入手机号"  class="layui-input">
             </div>
         </div>
@@ -41,18 +40,24 @@
         </div>
 
               <div class="layui-form-item">${(model.bucket)!""}
-            <label class="layui-form-label">角色id<span class="span_must">*</span></label>
+            <label class="layui-form-label">角色<span class="span_must">*</span></label>
             <div class="layui-input-normal">
-                <input type="text"  name="roleId" maxlength="20" lay-verify="required"
-                 value="${(model.roleId)!""}"  placeholder="请输入角色id"  class="layui-input">
+<#--                <input type="text"  name="roleId" maxlength="20" lay-verify="required"-->
+<#--                 value="${(model.roleId)!""}"  placeholder="请选择所属角色"  class="layui-input">-->
+                <input value="${(model.roleId)!""}" id="demoRole" lay-verify="required"
+                       cyType="treeTool" cyProps="url:'/sys/role/sysSelect',name:'roleId'"
+                       placeholder="请选择所属角色" class="layui-input"/>
             </div>
         </div>
 
               <div class="layui-form-item">${(model.bucket)!""}
-            <label class="layui-form-label">部门id<span class="span_must">*</span></label>
+            <label class="layui-form-label">部门<span class="span_must">*</span></label>
             <div class="layui-input-normal">
-                <input type="text"  name="orgId" maxlength="10" lay-verify="required"
-                 value="${(model.orgId)!""}"  placeholder="请输入部门id"  class="layui-input">
+                <input value="${(model.orgId)!""}" id="demo" lay-verify="required"
+                       cyType="treeTool" cyProps="url:'/organize/select',name:'orgId'"
+                       placeholder="请选择所属部门" class="layui-input"/>
+<#--                <input type="text"  name="orgId" maxlength="10" lay-verify="required"-->
+<#--                 value="${(model.orgId)!""}"  placeholder="请选择所属部门"  class="layui-input">-->
             </div>
         </div>
 

@@ -69,7 +69,7 @@ public class SysRoleController extends AbstractController {
 
     /**
      * @param
-     * @author chenyi
+     * @author zzl
      * @Description 跳转到修改页面
      * @date 2017/6/27 11:17
      **/
@@ -123,6 +123,23 @@ public class SysRoleController extends AbstractController {
         return R.ok().put("list", list);
     }
 
+    /**
+     * select角色下拉框
+     */
+    @ResponseBody
+    @RequestMapping("/sysSelect")
+    public  R sysSelect () {
+        List<SysRole> sysRoleList = sysRoleService.findAll(null);
+        List<ZtreeBean> ztreeBeans = new ArrayList<>();
+        for (SysRole sysRole : sysRoleList) {
+            ZtreeBean ztreeBean = new ZtreeBean();
+            ztreeBean.setId(String.valueOf(sysRole.getRoleId()));
+            ztreeBean.setName(sysRole.getRoleName());
+            ztreeBean.setChkDisabled("false");
+            ztreeBeans.add(ztreeBean);
+        }
+        return R.ok().put("data",ztreeBeans);
+    }
     /**
      * 角色信息
      */

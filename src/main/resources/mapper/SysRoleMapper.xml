@@ -35,7 +35,7 @@
 	<select id="findAll"   resultType="xin.cymall.entity.SysRole">
 		select * from sys_role
 		<where>
-			<if test="createUserId != 'null'">
+			<if test="createUserId != null and createUserId !=''">
 				and create_user_id = #{createUserId}
 			</if>
 		</where>

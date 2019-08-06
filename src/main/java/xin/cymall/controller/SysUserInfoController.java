@@ -11,6 +11,8 @@ import xin.cymall.common.utils.PageUtils;
 import xin.cymall.common.utils.Query;
 import xin.cymall.common.utils.R;
 import xin.cymall.entity.SysUserInfo;
+import xin.cymall.service.OrganizeService;
+import xin.cymall.service.SysRoleService;
 import xin.cymall.service.SysUserInfoService;
 
 import java.util.List;
@@ -29,6 +31,10 @@ import java.util.Map;
 public class SysUserInfoController extends AbstractController {
 	@Autowired
 	private SysUserInfoService sysUserInfoService;
+	@Autowired
+    private SysRoleService sysRoleService;
+	@Autowired
+    private OrganizeService organizeService;
 	
     /**
      * 跳转到列表页
@@ -50,6 +56,11 @@ public class SysUserInfoController extends AbstractController {
         Query query = new Query(params);
 
 		List<SysUserInfo> sysUserInfoList = sysUserInfoService.getList(query);
+        for (SysUserInfo sysUserInfo : sysUserInfoList) {
+              sysUserInfo.setRoleName(sysRoleService.queryObject(sysUserInfo.getRoleId()).getRoleName());
+              sysUserInfo.setOrgName(organizeService.queryObject(sysUserInfo.getOrgId()).getOrgName());
+              sysUserInfo.setStatus(sysUserInfo.getStatus().equals("1") ? "可用" : "禁用");
+        }
 		int total = sysUserInfoService.getCount(query);
 		
 		PageUtils pageUtil = new PageUtils(sysUserInfoList, total, query.getLimit(), query.getPage());
@@ -109,6 +120,7 @@ public class SysUserInfoController extends AbstractController {
 	@RequestMapping("/update")
 	@RequiresPermissions("sysuserinfo:update")
 	public R update(@RequestBody SysUserInfo sysUserInfo){
+        sysUserInfo.setCreateTime(null);
 		sysUserInfoService.update(sysUserInfo);
 		
 		return R.ok();

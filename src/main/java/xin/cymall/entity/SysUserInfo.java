@@ -32,4 +32,13 @@ public class SysUserInfo extends BaseEntity implements Serializable {
 	private String address;
 	/**部门id**/
 	private String orgId;
+
+	/**
+	 * 冗余字段
+	 */
+	/**角色名**/
+	private String roleName;
+	/**部门名**/
+	private String orgName;
+
 }

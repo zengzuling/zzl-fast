@@ -61,8 +61,7 @@
             <th width="1%" param="{type:'checkbox'}">
                 <input type="checkbox" lay-skin="primary" lay-filter="allChoose">
             </th>
-            			            <!--isPrimary：是否是主键-->
-            <th width="10%" param="{name:'userInfoId'}">用户id</th>
+            <th width="10%" param="{name:'userInfoId',isPrimary:'true',hide:'true'}">用户id</th>
 		          <th width="10%" param="{name:'username'}">用户名</th>
 			            			
 		          <th width="10%" param="{name:'email'}">邮箱</th>
@@ -70,8 +69,7 @@
 		          <th width="10%" param="{name:'mobile'}">手机号</th>
 
 		          <th width="10%" param="{name:'createTime'}">创建时间</th>
-
-		          <th width="10%" param="{name:'orgId'}">隶属部门</th>
+		          <th width="10%" param="{name:'orgName'}">隶属部门</th>
 			                        <!--isPrimary：渲染列-->
                   <th width="10%" param="{name:'status'}">状态</th>
         </tr>

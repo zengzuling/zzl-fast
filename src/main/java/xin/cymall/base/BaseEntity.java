@@ -23,6 +23,9 @@ public abstract class BaseEntity {
     /**创建时间**/
     @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime = new Date();
+    /**修改时间**/
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date updateTime = new Date();
     /**角色id**/
     private Long roleId = Constant.DEFAULT_ADMIN;
 }
