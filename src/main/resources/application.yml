@@ -4,3 +4,15 @@ rabbitmq:
   username: zzl
   password: 123123
   virtual-host: /
+spring:
+ redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123123
+    timeout: 1000
+    database: 0
+    pool:
+      max-active: 10
+      max-idle: 8
+      min-idle: 2
+      max-wait: 100
