@@ -7,9 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import xin.cymall.common.enumresource.StateEnum;
 import xin.cymall.common.log.SysLog;
-import xin.cymall.common.utils.PageUtils;
-import xin.cymall.common.utils.Query;
-import xin.cymall.common.utils.R;
+import xin.cymall.common.utils.*;
 import xin.cymall.entity.SysUserInfo;
 import xin.cymall.service.OrganizeService;
 import xin.cymall.service.SysRoleService;
@@ -35,7 +33,9 @@ public class SysUserInfoController extends AbstractController {
     private SysRoleService sysRoleService;
 	@Autowired
     private OrganizeService organizeService;
-	
+	@Autowired
+    private RedisUtil redisUtil;
+
     /**
      * 跳转到列表页
      */
@@ -108,7 +108,7 @@ public class SysUserInfoController extends AbstractController {
 	@RequiresPermissions("sysuserinfo:save")
 	public R save(@RequestBody SysUserInfo sysUserInfo){
 		sysUserInfoService.save(sysUserInfo);
-		
+		redisUtil.set(Constant.RedisEnum.USERINFO.getValue()+sysUserInfo.getUserInfoId(),sysUserInfo);
 		return R.ok();
 	}
 	
@@ -121,8 +121,9 @@ public class SysUserInfoController extends AbstractController {
 	@RequiresPermissions("sysuserinfo:update")
 	public R update(@RequestBody SysUserInfo sysUserInfo){
         sysUserInfo.setCreateTime(null);
+
 		sysUserInfoService.update(sysUserInfo);
-		
+        redisUtil.set(Constant.RedisEnum.USERINFO.getValue()+sysUserInfo.getUserInfoId(),sysUserInfo);
 		return R.ok();
 	}
 
@@ -160,7 +161,11 @@ public class SysUserInfoController extends AbstractController {
 	@RequiresPermissions("sysuserinfo:delete")
 	public R delete(@RequestBody String[] userInfoIds){
 		sysUserInfoService.deleteBatch(userInfoIds);
-		
+		//拼接数据删除redis
+        for (int i = 0; i < userInfoIds.length; i++) {
+            userInfoIds[i] = Constant.RedisEnum.USERINFO.getValue() + userInfoIds[i];
+        }
+        redisUtil.del(userInfoIds);
 		return R.ok();
 	}
 	

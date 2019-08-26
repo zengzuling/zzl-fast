@@ -100,4 +100,20 @@ public class Constant {
         }
     }
 
+    /**
+     * REDIS存放的枚举 key xxx_id
+     */
+    public enum RedisEnum{
+        //个人信息
+        USERINFO("userinfo_");
+        private String value;
+        private RedisEnum(String value) {
+            this.value = value;
+        }
+
+        public String getValue() {
+            return value;
+        }
+    }
+
 }

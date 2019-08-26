@@ -33,7 +33,7 @@ public class SysUserInfoServiceImpl implements SysUserInfoService {
 	public int getCount(Map<String, Object> map){
 		return sysUserInfoDao.getCount(map);
 	}
-
+	@Transactional
 	@Override
 	public void save(SysUserInfo sysUserInfo){
 		sysUserInfoDao.save(sysUserInfo);

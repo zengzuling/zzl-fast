@@ -82,13 +82,12 @@ public class OrganizeController {
         List<Organize> organizeList = organizeService.getList();
 
         //添加顶级菜单
-        Organize root = new Organize();
-
-        root.setOrgId(TopMenuEnum.TopOrg.getCode());
-        root.setOrgName(TopMenuEnum.TopOrg.getDesc());
-        root.setParentOrgId("-1");
-        root.setOpen(true);
-        organizeList.add(root);
+//        Organize root = new Organize();
+//        root.setOrgId(TopMenuEnum.TopOrg.getCode());
+//        root.setOrgName(TopMenuEnum.TopOrg.getDesc());
+//        root.setParentOrgId("-1");
+//        root.setOpen(true);
+//        organizeList.add(root);
         List<ZtreeBean> ztreeBeans = new ArrayList<>();
         for (Organize organize : organizeList) {
             ZtreeBean tree = new ZtreeBean();
