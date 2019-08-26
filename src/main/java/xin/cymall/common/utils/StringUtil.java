@@ -44,10 +44,7 @@ public class StringUtil {
 	 * @date 2017-2-16 下午3:40:52
 	 */
     public static boolean isEmpty(String s){
-    	if(s!=null && !s.trim().equals("")){
-    		return false;
-    	}
-    	return true;
+    	return s!=null && !s.trim().equals("") ? false : true;
     }
     
     public static boolean isNullOrEmpty(Object obj) {  

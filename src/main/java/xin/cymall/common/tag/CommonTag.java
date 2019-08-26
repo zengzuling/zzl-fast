@@ -22,7 +22,7 @@ public  class CommonTag implements TemplateDirectiveModel {
     @Override
     public void execute(Environment env, Map params, TemplateModel[] loopVars,
                         TemplateDirectiveBody body) throws TemplateException, IOException {
-        String id = params.get("id").toString();
+//        String id = params.get("id").toString();
         DefaultObjectWrapperBuilder builder = new DefaultObjectWrapperBuilder(Configuration.VERSION_2_3_25);
         env.setVariable("orgName", builder.build().wrap("11"));
         body.render(env.getOut());

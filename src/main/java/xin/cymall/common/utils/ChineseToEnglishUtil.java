@@ -16,7 +16,7 @@ public class ChineseToEnglishUtil {
 	 * @date 2017-2-25 上午9:34:17
 	 */
 	public static String getPingYin(String src) {
-		char[] t1 = (char[]) null;
+		char[] t1 = null;
 		t1 = src.toCharArray();
 		String[] t2 = new String[t1.length];
 		HanyuPinyinOutputFormat t3 = new HanyuPinyinOutputFormat();
@@ -62,10 +62,4 @@ public class ChineseToEnglishUtil {
 		}
 		return convert.toUpperCase();
 	}
-
-
-	public static void main(String[] args) {
-		System.out.println(getPinYinHeadChar("中国 人"));
-	}
-	
 }

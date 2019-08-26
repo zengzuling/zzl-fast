@@ -277,12 +277,9 @@ public class SysMenuController extends AbstractController {
         }
 
         //菜单
-        if (menu.getType() == Constant.MenuType.MENU.getValue()) {
-            if (StringUtils.isBlank(menu.getUrl())) {
-                throw new MyException("菜单URL不能为空");
-            }
+        if (Constant.MenuType.MENU.getValue() == menu.getType() && StringUtils.isBlank(menu.getUrl())) {
+            throw new MyException("菜单URL不能为空");
         }
-
         //上级菜单类型
         int parentType = Constant.MenuType.CATALOG.getValue();
         if (menu.getParentId() != 0) {

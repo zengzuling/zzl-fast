@@ -153,7 +153,7 @@ public class GetDataController {
      */
     @ResponseBody
     @RequestMapping("/uploads")
-    public R uploads(@RequestParam("uploadFile") MultipartFile[] file, HttpServletRequest request) throws Exception {
+    public R uploads(@RequestParam("uploadFile") MultipartFile[] file, HttpServletRequest request) throws IOException {
 
         if (file[0].isEmpty()) {
             throw new MyException("上传文件不能为空");

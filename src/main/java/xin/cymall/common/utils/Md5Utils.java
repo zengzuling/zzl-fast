@@ -22,15 +22,15 @@ public class Md5Utils {
 	 *            需要签名的参数
 	 * @return 签名的字符串
 	 */
-	public static StringBuilder CreateLinkString(Map<String, String> params) {
+	public static StringBuilder createLinkString(Map<String, String> params) {
 		List<String> keys = new ArrayList<>(params.keySet());
 		Collections.sort(keys);
 		StringBuilder prestr = new StringBuilder();
 		String key = "";
 		String value = "";
 		for (int i = 0; i < keys.size(); i++) {
-			key = (String) keys.get(i);
-			value = (String) params.get(key);
+			key = keys.get(i);
+			value = params.get(key);
 			if ("".equals(value) || value == null
 					|| key.equalsIgnoreCase("sign")
 					|| key.equalsIgnoreCase("sign_type")) {
@@ -52,7 +52,7 @@ public class Md5Utils {
 	 */
 	public static String buildMysign(Map<String, String> sArray, String key) {
 		if (sArray != null && sArray.size() > 0) {
-			StringBuilder prestr = CreateLinkString(sArray);
+			StringBuilder prestr = createLinkString(sArray);
 			System.out.println("********************代签名字符串为："
 					+ prestr.toString() + key);
 			return md5(prestr.toString() + key, "UTF-8");
@@ -104,12 +104,4 @@ public class Md5Utils {
 
 		return out;
 	}
-
-	public static void main(String[] args) {
-
-		String ss = Md5Utils.md5("notify_id=8650bbfcb5734539844ba1a617a0d347&order_no=20170331100141&retMsg=failed&status=TRADE_FINISHED&total_fee=200&trade_no=10170331021931805611ea78578fg560f7gf60540c098ga624eg3520g80a55ged4629dd9g7bd77592", "UTF-8");
-
-		System.out.println(ss);
-	}
-
 }

@@ -5,7 +5,9 @@ import java.text.DecimalFormat;
 
 public class AmountUtil {
 	
-    
+    private AmountUtil(){
+    	throw new IllegalStateException("AmountUtil class");
+	}
     /**
 	 * @author zzl
 	 * @Description 金额元转分

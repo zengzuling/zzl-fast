@@ -124,7 +124,6 @@ public class SysConfigController extends AbstractController{
 	public R update(@RequestBody SysConfig sysConfig){
 		SysConfig oldConfig=sysConfigService.queryObject(sysConfig.getId());
 		if(!oldConfig.getCode().equals(sysConfig.getCode())){
-			List<SysConfig> sysConfigList=sysConfigService.findByCode(sysConfig.getCode());
 			if(CollectionUtils.isNotEmpty(sysConfigService.findByCode(sysConfig.getCode()))){
 				throw new MyException("参数名已存在");
 			}

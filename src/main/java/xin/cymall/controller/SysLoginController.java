@@ -2,7 +2,8 @@ package xin.cymall.controller;
 
 import com.google.code.kaptcha.Constants;
 import com.google.code.kaptcha.Producer;
-import org.apache.shiro.authc.*;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.apache.shiro.subject.Subject;
@@ -67,12 +68,6 @@ public class SysLoginController {
 			password = new Sha256Hash(password).toHex();
 			UsernamePasswordToken token = new UsernamePasswordToken(username, password);
 			subject.login(token);
-		}catch (UnknownAccountException e) {
-			return R.error(e.getMessage());
-		}catch (IncorrectCredentialsException e) {
-			return R.error(e.getMessage());
-		}catch (LockedAccountException e) {
-			return R.error(e.getMessage());
 		}catch (AuthenticationException e) {
 			return R.error("账户验证失败");
 		}

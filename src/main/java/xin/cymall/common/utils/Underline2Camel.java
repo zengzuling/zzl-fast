@@ -21,7 +21,7 @@ public class Underline2Camel {
         if (line == null || "".equals(line)) {
             return "";
         }
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         Pattern pattern = Pattern.compile("([A-Za-z\\d]+)(_)?");
         Matcher matcher = pattern.matcher(line);
         while (matcher.find()) {
@@ -48,7 +48,7 @@ public class Underline2Camel {
             return "";
         }
         line = String.valueOf(line.charAt(0)).toUpperCase().concat(line.substring(1));
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         Pattern pattern = Pattern.compile("[A-Z]([a-z\\d]+)?");
         Matcher matcher = pattern.matcher(line);
         while (matcher.find()) {
